@@ -1,0 +1,1373 @@
+<html lang="en"><head>
+	<title>Individual Goal</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131459356-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-131459356-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon control and links-->
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <!--<link rel="manifest" href="unadat.com/img/favicons/site.webmanifest">-->
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Core CSS--> 
+    <link rel="stylesheet" href="css/bootstrap1.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative23.css" type="text/css">
+    <link rel="stylesheet" href="css/acct.css" type="text/css">
+    <link rel="stylesheet" href="css/signup.css" type="text/css">
+    <link rel="stylesheet" href="css/darkmode.css" type="text/css">
+    <link rel="stylesheet" href="css/challenge_popup.css" type="text/css">
+    <link rel="stylesheet" href="css/goal_store_individual.css" type="text/css">
+    <link rel="stylesheet" href="css/goal_store.css" type="text/css">
+    <!-- Owl Carousel Min-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--Quill CSS-->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    
+</head>
+
+<body style="padding-top:50px;">
+    <nav id="mainNav" class="navbar navbar_account navbar-expand-md fixed-top" style="height: 41px; background-color: rgba(255, 255, 255, 0.97);">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index"> <img src="img/logo_img.png" class="img-responsive logo_image" "=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div style="width: 100%;" class="d-flex justify-content-end">
+                    <ul class="nav navbar-nav" style="margin-right: -15px; background-color: rgba(255, 255, 255, 0.97);"><li class="mob_hidden">
+        <span class="acct_link_center">
+            <a class="acct_icon_link tab-link" href="goals" data-target="goals_store.php" id="goals_icon"><img src="../img/navbar/account_goals_in.png" class="acct_home_icon"></a>
+            <a class="acct_icon_link tab-link" href="dashboard" data-target="dashboard.php" id="home_icon"><img src="../img/navbar/account_profile_in.png" class="acct_home_icon"></a>
+            <a class="acct_icon_link tab-link" href="portfolio" data-target="portfolio.php" id="port_icon"><img src="../img/navbar/account_portfolio_in.png" class="acct_home_icon"></a>
+            <a class="acct_icon_link tab-link" href="supporters" data-target="supporters.php" id="sup_icon"><img src="../img/navbar/account_supporters_in.png" class="acct_home_icon"></a>
+            <div id="tooltip_goal" style="left:0px;" class="ticker_tooltip nav_tooltip">Goals</div>
+            <div id="tooltip_home" style="left:25%;" class="ticker_tooltip nav_tooltip">Home</div>
+            <div id="tooltip_port" style="left:50%;" class="ticker_tooltip nav_tooltip">Plan</div>
+            <div id="tooltip_sup" style="left:75%;" class="ticker_tooltip nav_tooltip">Supporters</div>
+        </span>
+    </li><li class="desk_hidden"><a href="dashboard">Home</a></li><li class="desk_hidden"><a href="portfolio">Plan</a></li><li class="desk_hidden"><a href="supporters">Supporters</a></li><li class="mob_hidden acct_navbar_list">
+        <div class="dropdown">
+            <button class="create_navbar" type="button" id="dropdown_create_nav" onclick="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img id="nav_create_button" class="acct_icon" src="../img/navbar/nav_create_base_in.png">
+            </button>
+            <div id="tooltip_create" class="ticker_tooltip nav_tooltip nav_tooltip_small">Create</div>
+            <div class="dropdown-menu" id="create_dropdown" aria-labelledby="dropdown_create_nav">
+                <p class="dropdown-item dropdown_link" onclick="logDefaultOpen()" id="create_log_drop">Log a Payment</p>
+                <p class="dropdown-item dropdown_link" onclick="location.href='goals';"><a href="goals;">Set a Goal</a></p>
+                <p class="dropdown-item dropdown_link" onclick="customPopOpen('create_post_form')">Create a Post</p>
+                <p class="dropdown-item dropdown_link" onclick="customPopOpen('challenge-popup')">Create a Challenge</p>
+                <p class="dropdown-item dropdown_link" onclick="customPopOpen('chore_list_create_container')">Create a Chores List
+                </p><div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div>
+                <p class="dropdown-item dropdown_link" onclick="setLType(2)">Start Emergency Fund</p>
+                <p class="dropdown-item dropdown_link" onclick="setLType(2)">Start Custom Fund</p>
+                <div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div>
+                <p class="dropdown-item dropdown_link" onclick="setLType(0)">Add Credit Card</p>
+                <p class="dropdown-item dropdown_link" onclick="setLType(1,1)">Add Car Loan</p>
+                <p class="dropdown-item dropdown_link" onclick="setLType(1,2)">Add Student Loan</p>
+                <p class="dropdown-item dropdown_link" onclick="setLType(3)">Add Mortgage</p>
+                <p class="dropdown-item dropdown_link" onclick="setLType(1,0)">Add Custom Debt</p>
+                <div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div>
+                <p class="dropdown-item dropdown_link" onclick="storyContainerOpen()">New Fundraising Story</p>
+            </div>
+        </div>
+    </li><li class="mob_hidden acct_navbar_list">
+        <a onclick="customPopOpen(&quot;circle_list&quot;);changeCirclesColor();" id="circles_icon_link"><img id="nav_circles_icon" src="../img/navbar/nav_circles_nobg.png" class="acct_icon"></a>
+        <div id="tooltip_circles" class="ticker_tooltip nav_tooltip nav_tooltip_small" style="display: none;">Circles</div>
+    </li><li class="desk_hidden"><a onclick="customPopOpen('mobile_create_list_container')" href="javascript:void(0)">CREATE</a></li><li class="mob_hidden acct_navbar_list">
+        <div class="dropdown">
+            <button class="create_navbar" id="dropdown_notification_nav" onclick="window.location.href='inbox';" aria-haspopup="true" aria-expanded="false">
+                <img id="nav_notification" class="acct_icon" src="../img/navbar/nav_noti_base_in.png">
+            </button>
+            <div id="tooltip_notification" class="ticker_tooltip nav_tooltip nav_tooltip_small">Notifications</div>
+            <span id="unread_message_num"></span>
+        </div>
+    </li><li class="mob_hidden acct_navbar_list">
+        <a href="account_edit" id="settings_icon_link"><img id="nav_settings_icon" src="../img/navbar/nav_set_base_in.png" class="acct_icon"></a>
+        <div id="tooltip_settings" class="ticker_tooltip nav_tooltip nav_tooltip_small">Settings</div>
+    </li><li class="desk_hidden"><a href="account_edit">Settings</a></li><li class="mob_hidden acct_navbar_list">
+        <a href="account_preferences" id="prefs_icon_link"><img id="nav_prefs_icon" src="../img/navbar/nav_pref_base_in.png" class="acct_icon"></a>
+        <div id="tooltip_preferences" class="ticker_tooltip nav_tooltip nav_tooltip_small">Preferences</div>
+    </li><li class="desk_hidden"><a href="account_preferences">Preferences</a></li><li class="mob_hidden acct_navbar_list">
+    <div class="dropdown">
+        <button type="button" id="logout_dropdown" class="dropdown_replace mob_hidden" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img id="logout_img" class="acct_icon" src="../img/navbar/nav_dots_base_in.png">
+        </button>
+        <div id="logout_menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu_nav_logout" style="cursor:pointer;">
+            <span class="nav_link_sim" href="javascript:void(0)">
+                <label for="nav_dark_toggle">Dark mode<span class="nav_switch"><input style="margin-left:5px;" type="checkbox" id="nav_dark_toggle"><span class="slider round"></span></span></label>
+            </span>
+            <a href="javascript:void(0)" onclick="openNav(0)" id="side_open" class="nav_link_sim">Invite</a>
+            <a class="nav_link_sim" href="signout">Log Out</a>
+        </div>
+    </div>
+    </li>
+    <li class="desk_hidden">
+        <form>
+        <span class="nav_link_sim">
+            <label id="mob_dark_label">Dark mode
+                    <span class="nav_switch">
+                        <input style="margin-left:5px;" type="checkbox" id="nav_dark_toggle_mob">
+                        <span class="slider round">
+                    </span>
+            </span></label>
+        </span>
+        </form>
+    </li>
+    <li class="desk_hidden"><a href="javascript:void(0)" onclick="openNav(0)">Invite</a></li>
+    <li class="desk_hidden"><a href="signout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>    <div class="screen_grey" id="screen_greyout">
+        <!--Added to goals popup-->
+        <div class="custom_pop" id="goal_add_container">
+            <h3 style="text-align:center;"><img src="/img/green-check.png" style="display:inline-block;height:1em;width:1em;margin-right:0.3em;margin-top:-0.5rem;">Added to Your Goals</h3>
+            <p style="margin-bottom:0.2rem;"><strong>Free</strong></p>
+            <h4 class="goal_template_title" style="margin-top:0.2rem;">Help Me Decide</h4>
+            <p id="p-donate"><a href="javacript:void(0);">Share this goal with others to get their support</a></p>
+            <p style="margin-bottom:0.65rem;"><strong>Start:</strong> Today</p>
+            <p style="margin-bottom:0.65rem;"><strong>Duration:</strong> 3 Months</p>
+            <p style="font-size:80%;">Can be changed later in your dashboard</p>
+            <div style="text-align:center;margin-top:2em;">
+                <p><button type="button" class="btn btn-primary">Customize</button></p>
+                <a href="javacript:void(0);">Skip &amp; Go to Dashboard</a>
+            </div>
+        </div>
+        <!-- Error Pop Up -->
+        <div class="custom_pop" id="ErrorPopUp" style="text-align: center; display: ;">
+            <h3 style="margin-bottom:1.5em;">This Goal Is Not Yet Available!</h3>
+            <p><a class="btn btn-default grad_button" href="goals_store">Return to Main Goal Store</a></p>
+        </div>
+        <div class="custom_pop" id="survey_container" style="min-height:46em;position:relative;"></div>
+        <div class="custom_pop row" id="invite_wiz_container" style="padding: 0px 0px 0px 0px;width:60%;min-height:0em;display:none;">
+            <div style="border:1px solid rgb(165,165,165);min-height:6em;padding:1em;width:100%;">
+                <h5 class="sec_title sec_title_right">Let's get started</h5>    
+                <p class="wizard_subheader">We'll guide you through setting up Unadat for your family.</p>
+            </div>
+            <div class="row">
+                <div class="col-3 mob_hidden" style="border-left:1px solid rgb(165,165,165);padding: 1.5%;">
+                    <img src="../img/inv_wiz_left.png" style="height:100%;width:auto;display:block;margin:0 auto;">
+                </div>
+                <div class="col-9 col_mob_big" style="background-color:rgb(242,242,242);padding: 1.2em 1em 1.2em 1em;border-left:1px solid rgb(165,165,165);border-right:1px solid rgb(165,165,165);">
+                    <table class="invite_wiz_table">
+                        <tbody><tr><td><img src="../img/inv_wiz_01.png" class="invite_wiz_table_icon">Building their own support circle improves the experience for all new users.</td></tr>
+                        <tr><td><img src="../img/inv_wiz_02.png" class="invite_wiz_table_icon">Achieving goals is faster when you connect with others, so consider asking a family member for help.</td></tr>
+                        <tr><td><img src="../img/inv_wiz_03.png" class="invite_wiz_table_icon">You're in control. You decide when to invite people to start using Unadat and if you want to share any information with them.</td></tr>
+                        <tr><td><img src="../img/inv_wiz_04.png" class="invite_wiz_table_icon">You will <u>not</u> be asked for their names, relation to you, or any other details.</td></tr>
+                    </tbody></table>
+                </div>
+            </div>
+            <div style="text-align:right;border:1px solid rgb(165,165,165);height:5em;padding:1em;width:100%;">
+                <p><button class="btn btn-default grad_button grad_second" style="margin-right:1em;" onclick="customPopClose(&quot;invite_wiz_container&quot;)">Not now</button> <button class="btn btn-default grad_button" onclick="inviteWizOpen()">Add Supporters</button></p>
+            </div>
+        </div>
+    <div class="custom_pop" id="challenge-popup" style="display:none;"><div class="modal-wrapper"><h3 class="challenge-title">Create a Challenge</h3><button class="closebtn abs_btn" onclick="customPopClose('log_container')" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);"></button><h4 class="challenge-subheading">Invite your friends to work on this goal simultaneously</h4><div class="challenge-modal-body"><div class="left-column"><div><label for="name">Title<span class="red-asterisk">*</span></label><input type="text" id="name" name="name" placeholder="Enter a name" maxlength="50" required=""></div><div><label for="description">Description</label><textarea type="text" id="description" name="description" placeholder="Add a description..."></textarea></div><div class="date-section"><div><label for="start_date">Start<span class="red-asterisk">*</span></label><input type="date" id="start_date" name="start_date" required=""></div><div><label for="end_date">End<span class="red-asterisk">*</span></label><input type="date" id="end_date" name="end_date" required=""></div></div><div class="info-section"><div><label for="amount">Amount<span class="red-asterisk">*</span></label><input type="number" id="amount" name="amount" min="1" step="1" placeholder="100" required=""></div><div><label for="challenge-type">Challenge Type<span class="red-asterisk">*</span></label><select id="challenge_type" name="challenge-type"><option value="save">Save Up</option><option value="reduce_debt">Reduce Debt</option></select></div></div><div><label for="celebration">Celebration<span class="red-asterisk">*</span></label><textarea type="text" id="celebration" name="celebration" placeholder="How are we celebrating..."></textarea></div><div id="advancedOptions" style="cursor:pointer;">Advanced Options</div><div id="lastDateDiv" style="display: none;"><label for="lastChanceToJoin">Last Chance to Join: </label><input type="date" id="lastChanceToJoin" name="lastChanceToJoin"></div></div><div class="right-column"><div class="user-section"><div id="invite-title"><span> 🔒 </span>Invite Members</div><div class="private-section"><div class="top-section"><div id="private-title">Private Challenge</div><div class="toggle-section"><label class="switch"><input type="checkbox" id="togBtn"><div class="slider round"></div></label></div></div><p id="toggle-text">Anyone can join</p></div><div class="add-user-section"><button class="add-user-btn">+</button><input type="text" class="user" name="user" placeholder="Add Member" maxlength="50"></div><div class="participants-list"></div></div></div></div><div class="create-btn-container"><button class="create-btn" id="challenge_create_submit" onclick="submitChallenge()">CREATE</button></div></div></div><div class="custom_pop" id="create_post_form"><button class="closebtn abs_btn" id="saver" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);" onclick="customPopClose('create_post_form')"></button><h3 style="text-align: left;">Create New Lifeline Post</h3><div style="height:0px;width:100%;margin:0 auto; margin-top:5px;margin-bottom:5px;border-top:1px solid rgb(231,232,234);"></div><div class="form-group"></div><input type="text" name="post_title" placeholder="Enter title here" id="form_post_title" class="form-control" style="border: 1px solid rgb(158, 224, 255); width: 100%; height: 2em; padding: 0.4em; margin: 0 0 2rem 0;"><div id="editor"></div><textarea id="post_text" placeholder="What do you want to teach Unadat users?" maxlength="3000" style="border:1px solid rgb(158,224,255);width:100%;height:6em;padding:0.4em;"></textarea><br><br><div style="height:0px;width:100%;margin:0 auto; margin-top:5px;margin-bottom:5px;border-top:1px solid rgb(231,232,234);"></div><br><div style="position:relative;margin-top:-0.25em;width:100%;"><img src="../img/create_story_tip.png" align="left" id="lifeline_tags" style="width:30px;height:30px;margin: 2rem 0 0 0;"><br><div class="ticker_tooltip blue_tooltip" style="text-align: left;width:100%;left:0px;top:5em;font-size:85%;" id="lifeline_tooltip"> <p>This is a hoverable tooltip for the tags, grades, and milestones.</p> </div><table style="width:100%;margin-bottom:1.5em;"><tbody><tr><td class="supp_add_cell" onclick="storyPane(1,'ll')">Add Tags</td><td class="supp_add_cell" onclick="storyPane(2,'ll')">Add Milestones</td><td class="supp_add_cell" onclick="storyPane(3,'ll')">Add Grades</td></tr></tbody></table><div id="pane_indicator" style="position: absolute; height: 1em; width: 33%; text-align: center; left: 0%; transform: translateY(-1.1em); color: rgb(255, 255, 255); --darkreader-inline-color:#e8e6e3; display: block;" data-darkreader-inline-color=""> ▲ </div><div id="pane_container" class="pane_container"><div id="story_pane_ll1" style="min-height: 5em; display: block;"><div class="edit_block" id="goal_hid" style="margin-top: 0px; display: block; border: 1px solid rgb(221, 223, 226);"><button type="button" class="btn goals_button" id="goal_button0" onclick="goalToggle(0)">CREDIT CARDS</button><button type="button" class="btn goals_button" id="goal_button1" onclick="goalToggle(1)">DEBT</button><button type="button" class="btn goals_button" id="goal_button2" onclick="goalToggle(2)">MORTGAGES</button><button type="button" class="btn goals_button" id="goal_button3" onclick="goalToggle(3)">LIFESTYLE</button></div></div><div id="story_pane_ll2" style="min-height:5em;display:none;"><div class="edit_block" id="add_holder_ll" style="margin-top: 0px; display: block; border: 1px solid rgb(221, 223, 226);"><button type="button" class="btn goals_button" id="goal_button4" onclick="goalToggle(4)">EARLY</button><button type="button" class="btn goals_button" id="goal_button5" onclick="goalToggle(5)">IN PROGRESS</button><button type="button" class="btn goals_button" id="goal_button6" onclick="goalToggle(6)">LATE</button></div></div><span id="priv_tooltip" class="tip_small">Others will see your story in Unadat Feed. You can invite people after you've created it.</span><div class="form-group"><button type="button" name="publish" class="btn btn-default grad_button grad_emph" style="margin-top:0.5em;" onclick="addNewPost();">Publish</button></div></div></div></div><div class="custom_pop" id="story_container"><button class="closebtn abs_btn" onclick="customPopClose(&quot;story_container&quot;)" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);"></button><div style="padding:35px 30px 0px 30px;"><h3>Create Fundraising Story</h3><div style="height:0px;width:100%;margin:0 auto; margin-top:5px;margin-bottom:5px;border-top:1px solid rgb(231,232,234);"></div><br><p><input class="editformtext editform_long" type="text" maxlength="50" id="story_title" placeholder="Title" style="display:none;" value="Story 1"><span id="story_title_span" style="font-size:140%;">Story 1</span><a href="javascript:void(0)" onclick="storyTitleEdit()" id="story_title_toggle"> Edit name</a><br><span id="story_title_span" style="font-size:140%;">Who can see this story? <br><span class="tip_small" style="margin-left:0em;">Allow others to see this story on Unadat</span><br><select id="story_share" class="default_select" style="margin-top:0.5em;margin-right:0.5em;"><option value="">--Share with--</option><option value="none">No one (draft)</option><option value="sup">Supporters</option><option value="all">Everyone</option></select><label class="edit_label" style="margin-bottom:0px;" for="story_others">Visible to others<input type="checkbox" style="margin-left:5px" name="story_others" id="story_others" checked=""></label><br></span></p><p><textarea id="story_text_saved" placeholder="Why are you raising money, and how will the donations make a difference?" maxlength="1000" style="border:1px solid rgb(158,224,255);width:100%;height:4em;padding:0.4em;" required=""></textarea></p><div style="position:relative;margin-top:-0.25em;width:100%;"><img src="../img/create_story_tip.png" id="create_text_icon" style="width:30px;height:30px;"><div class="ticker_tooltip blue_tooltip" style="width:100%;left:0px;top:35px;font-size:85%;" id="story_tooltip"> <p>Just start writing – there's no expected length.</p> <p>Some ideas:<br></p><ul><li> Introduce what you’re raising money for.</li> <li>An explanation of your cause.</li> <li>How will you spend the money. Supporters like being in the loop on their investment into your future.</li> <li>Why this cause means so much to you.</li> <li>Share your gratitude and appreciation for any potential support.</li><li>Consider breaking it into blocks “My Backstory,” “My goals,” “The Costs,” “How You Can Help”</li> <li>How you will celebrate.</li> <li>Let the reader know how to share your story. For example: “To help get the word out, you can share the link to your Facebook Timeline!”</li>  </ul><p></p> </div></div><br><p><span class="edit_label" style="width:9em;">Set target amount: </span><input class="editformtext" type="number" id="story_target" min="0" step="0.01" placeholder="$" required=""></p><p><span class="edit_label" style="width:9em;">Set payment link: </span><input class="editformtext" type="text" id="story_pay_link" placeholder="Enter URL"><span id="storyurl-checker" class="validity_signal"></span></p><div style="position:relative;margin-top:-0.25em;width:100%;"><img src="../img/i-icon.png" id="i_icon" style="width:30px;height:30px;border-radius:50%;background-color:white"><div class="ticker_tooltip blue_tooltip" style="width:100%;left:0px;top:35px;font-size:85%;" id="i_tooltip"><p>This is where other users can reach out and give you support! (e.g: paypal, venmo, cashapp, etc.)</p></div></div><p></p></div><table style="width:100%;margin-bottom:1.5em;"><tbody><tr><td class="supp_add_cell" onclick="storyPane(1,&quot;sup&quot;)">Add Goals</td><td class="supp_add_cell" onclick="storyPane(3,&quot;sup&quot;)">Attach</td></tr></tbody></table><div id="pane_indicator" style="position:absolute;height:1em;width:33%;text-align:center;left:30px;transform:translateY(-1.1em);color:rgb(255,255,255);"> ▲ </div><div id="pane_container_sup" class="pane_container" style="display:none; padding-left:30px;padding-right:30px;"><div id="story_pane_sup1" style="min-height:5em;display:none;"><p><span id="goal_select"><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="0" id="goal_check0"> <label for="goal_check0">Buy a House</label></span><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="1" id="goal_check1"> <label for="goal_check1">Pay off a Car</label></span><br><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="2" id="goal_check2"> <label for="goal_check2">Pay Credit Cards</label></span><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="3" id="goal_check3"> <label for="goal_check3">Build a Fund</label></span><br><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="4" id="goal_check4"> <label for="goal_check4">Pay Student Loans</label></span><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="5" id="goal_check5"> <label for="goal_check5">Buy a Car</label></span><br><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="6" id="goal_check6"> <label for="goal_check6">Refinance a Car</label></span><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="7" id="goal_check7"> <label for="goal_check7">Pay a Business Loan</label></span><br><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="8" id="goal_check8"> <label for="goal_check8"></label>Plan Retirement</span><span class="log_radio_span" style="margin-left:0em;"><input type="checkbox" name="story_goal" value="9" id="goal_check9"> <label for="goal_check9"></label>Just do Better</span></span></p></div><div id="story_pane_sup3" style="min-height:5em;display:none;"><p><span class="edit_label">Stats</span><select id="story_ticker_attach" class="default_select"><option value="">None</option><option value="tdebt">Total Debt</option><option value="tfund">Total Fund</option><option value="tpay">Total Paid</option></select></p><p><span class="edit_label" id="attach_item_label">Item</span><select id="attach_item_select" class="default_select" onchange="storyAttachChange()"><option>-Select-</option><option value="Card">Card</option><option value="Loan">Loan</option><option value="Fund">Fund</option><option value="Mort">Mortgage</option></select><select class="attach_select default_select" id="story_card_attach" style="display:none;"></select> <select class="attach_select default_select" id="story_loan_attach" style="display:none;"></select> <select class="attach_select default_select" id="story_fund_attach" style="display:none;"></select> <select class="attach_select default_select" id="story_mort_attach" style="display:none;"></select></p></div></div><p style="text-align:center;margin-bottom:20px;"><span id="priv_tooltip" class="tip_small"></span><br><button style="margin-top:0.5em;" class="btn btn-default grad_button grad_emph" onclick="storySubmit()">Create</button></p></div><div class="custom_pop" id="chore_list_create_container"><button class="closebtn abs_btn" onclick="customPopClose(&quot;chore_list_create_container&quot;)" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);"></button><h3 id="story_log_title">Create a Chores List</h3><div><h5>I am the:</h5><br><div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="chore_pvc_create_p" data-pvc="p" class="pvc_selector btn btn-outline-primary"><input type="radio" name="options" id="chore_pvc_create_p" autocomplete="off"> Parent</label><label for="chore_pvc_create_c" data-pvc="c" class="pvc_selector btn btn-outline-primary active"><input type="radio" name="options" id="chore_pvc_create_c" autocomplete="off" checked="">Child</label></div></div><div><br><input class="form-control form-control-lg mt-1" id="chore_recipient_email" placeholder="Recipient's username or email"><br><br><br><input class="form-control form-control-lg mt-1" id="chore_list_title" placeholder="List title (optional)"><br></div><div><div id="chore_popup_list" style="width:100%;"></div><button class="mt-4 btn btn-primary" onclick="addNewChorePopup()">New Chore</button><br><br></div><div class="tabContainer" style="margin-top:1.5em;margin-bottom:1.5em;"><ul class="nav nav-tabs" id="myTab" role="tablist"><li class="nav-item"><a class="nav-link active" id="goals-tab" data-toggle="tab" href="#chore_create_goals" role="tab" aria-controls="chore_create_goals" aria-selected="true">Goals</a></li><li class="nav-item"><a class="nav-link" id="stories-tab" data-toggle="tab" href="#chore_create_stories" role="tab" aria-controls="chore_create_stories" aria-selected="false">Stories</a></li></ul><div class="tab-content" id="myTabContent"><div class="tab-pane fade show active" id="chore_create_goals" role="tabpanel" aria-labelledby="goals-tab"><select class="form-control goals-dropdown" id="goalsDropdown_create" style="margin-bottom: 5px;"><option value="">Attach a Goal</option></select></div><div class="tab-pane fade" id="chore_create_stories" role="tabpanel" aria-labelledby="stories-tab"><select class="form-control stories-dropdown" id="storiesDropdown_create" style="margin-bottom: 5px;"><option value="">Attach a Story</option></select></div></div></div><br><p style="text-align:center;"><a class="btn btn-default grad_button grad_emph" id="create_modal_button" onclick="createChoresList()">Create Chores List</a></p></div><div class="custom_pop" id="log_container" style="min-height:0em;"><button class="closebtn abs_btn" onclick="customPopClose(&quot;log_container&quot;)" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);"></button><h3>Log a Payment</h3><div id="log_content_wrapper"><p>There's nothing in your portfolio yet. <a href="account_edit"><b>Add debts or start funds</b></a> to enjoy this feature.</p></div></div><div class="custom_pop" id="circle_list" style="min-height:0em;"><button class="closebtn abs_btn" onclick="customPopClose(&quot;circle_list&quot;);changeCirclesColor();" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);display:inline;float:right;margin-left:0px;position:static;"></button><h3>Circles</h3><div style="overflow-y:auto;width:99%;margin:0 auto;"><table id="circles_list" class="table_default"><tbody><tr><th></th><th id="user_column" class="circ_table_column" style="cursor:pointer;" onclick="sortIndicator(this.lastElementChild.id,-1);w3.sortHTML('#circles_list', '.item', 'td:nth-child(2)')">User<span id="user_indicator" style="visibility: visible;" class="circle_indicator">	▼</span></th><th id="circle_category_column" class="circ_table_column" style="cursor:pointer;" onclick="sortIndicator(this.lastElementChild.id,-1);w3.sortHTML('#circles_list', '.item', 'td:nth-child(3)')">Circle<span id="circle_indicator" style="visibility: hidden;" class="circle_indicator">	▼</span></th><th id="date_added_column" class="circ_table_column" style="cursor:pointer;" onclick="sortIndicator(this.lastElementChild.id,-1);w3.sortHTML('#circles_list', '.item', 'td:nth-child(4)')">Date Added<span id="date_indicator" style="visibility: hidden;" class="circle_indicator">	▼</span></th><th></th></tr></tbody></table></div><h3 style="padding-top: .5em;">Requests</h3><div id="testCircle"></div><div style="overflow-y:auto;width:99%;margin:0 auto;"><p>No incoming requests</p></div><h3 style="padding-top: .5em;">Discover</h3><div class="row"><div id="itm1" class="col-sm-12 col-md-4 col-lg-4 feature_col" style="background-color:" rgb(174,="" 222,="" 236);"=""><div class="card align-items-center rounded-top-4" id="head"><span><br></span><img src="img/avatars/2/1.png" class="userAvatarImg circlesAvatar"><span><br></span> <div class="text h-100 list-group list-group-flush rounded-bottom-4"><p class="card-title m-1 fs-3 text-center"><span style="font-weight:550">Anonymous</span></p><div class="card-text fs-5 m-0 text-left list-group-item">Multiple similar goals<div class="d-flex flex-wrap align-content-center justify-content-between"></div></div><div class="d-flex flex-row flex-wrap m-1 justify-content-between list-group-item"><button class="btn btn-primary add-btn" type="button" onclick="addDiscoveredUser('e8bd0f9a')">Add</button></div></div></div></div></div></div><div class="custom_pop" id="circle_add" style="min-height:0em;"><button class="closebtn abs_btn" onclick="customPopClose(&quot;circle_add&quot;)" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);display:inline;float:right;margin-left:0px;position:static;"></button><h3 id="invite_header">Invite Supporter</h3><br><p><span class="edit_label" style="width:10em;" id="circle_email_label">Email or username:</span> <input type="text" id="circle_email" class="barfield"><span style="font-size:85%;color:rgb(74, 197, 255);" id="circle_email_response"></span></p><p id="circle_add_dropdown_container"><span class="edit_label" style="width:10em;">Add to your circle:</span><select class="default_select" style="margin-left:5px;" id="circle_type"><option value="Friends">Friends</option><option value="Family">Family</option></select></p><button type="button" class="simp_button" id="circle_notes_toggle" style="padding-left:0px;font-size:1rem;">Add a note</button><p id="circle_notes_holder" style="display:none;"><textarea class="circle_notes_area" placeholder="Your note" style="width:50% font-size:1em; padding-left:1em;padding-right:1em;height:4em; border:1px solid rgb(158,224,255);min-width:240px;;" id="circle_notes" maxlength="100"></textarea><br></p><p style="text-align:center;"><button class="btn btn-default grad_button" id="circle_invite_default" onclick="supporterMilestones(); getMessage('circle_email', 'circle_notes')">Invite</button></p></div><div class="custom_pop" id="create_container" style="display:block;"></div><div class="custom_pop" id="mobile_create_list_container"><button class="closebtn abs_btn" onclick="customPopClose(&quot;mobile_create_list_container&quot;)" autocomplete="off" style="border-width:0px;background-color:rgba(255,255,255,0);"></button><h3>Share</h3><div style="margin-top:1em;"><button type="button" class="btn add_button mob_add_button" onclick="logDefaultOpen()">Log a Payment</button><button type="button" class="btn add_button mob_add_button" onclick="location.href='goals';"><a href="goals">Set a Goal</a></button><button type="button" class="btn add_button mob_add_button" onclick="customPopOpen('create_post_form')">Create a Post</button><div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div><button type="button" class="btn add_button mob_add_button" onclick="setLType(2)">Start Emergency Fund</button><button type="button" class="btn add_button mob_add_button" onclick="setLType(2)">Start Custom Fund</button><div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div><button type="button" class="btn add_button mob_add_button" onclick="setLType(0)">Add Credit Card</button><button type="button" class="btn add_button mob_add_button" onclick="setLType(1,1)">Add Car Loan</button><button type="button" class="btn add_button mob_add_button" onclick="setLType(1,2)">Add Student Loan</button><button type="button" class="btn add_button mob_add_button" onclick="setLType(3)">Add Mortgage</button><button type="button" class="btn add_button mob_add_button" onclick="setLType(1,0)">Add Custom Debt</button><div class="divider_internal" style="border-top: 1px solid rgb(231, 232, 234);"></div><button type="button" class="btn add_button mob_add_button" onclick="storyContainerOpen()">New Fundraising Story</button></div></div></div><div id="invite_sidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn abs_btn" onclick="closeNav(0)"></a><div id="invite_content" style="width:240px;margin: 0 auto;"><p style="font-size:1rem;"><b>Invite your friend to Unadat:</b></p><div style="text-align: center;"><p><input type="text" id="invite_mail" class="barfield" style="border-width:1px;" placeholder="Friend's email"></p><p style="margin-bottom:0.25em;"><input type="text" id="invite_name" class="barfield" style="border-width:1px;" placeholder="Your name (optional)"></p><p style="font-size:85%;line-height:1.05;color:rgb(100,100,100);text-align:left;">Your name will be displayed to the recipient but not saved on our servers.</p><p style="cursor:pointer;font-size: 1rem;" id="invite_message">View message  ↓</p><p><button style="margin-top:0.5em;margin-bottom:1.5em;" class="btn btn-default grad_button" onclick="inviteSub()">Send</button></p><div class="divider_internal" style="margin-top: 1em; margin-bottom: 2.5em; border-top: 1px solid rgb(231, 232, 234);"></div><p style="font-size:85%;line-height:1.05;"><b>Or invite several friends with a link</b></p><a href="https://www.facebook.com/sharer/sharer.php?u=https://unadat.com/invite_redirect?ref=836a9a95" target="_blank" rel="noopener noreferrer"><img src="img/sh_icon_fb.png" class="sh_icon"></a><a href="https://twitter.com/share?url=https://unadat.com/invite_redirect?ref=836a9a95&amp;text=Unadat: Outsmart debt together" target="_blank" rel="noopener noreferrer"><img src="img/sh_icon_tw.png" class="sh_icon"></a><span id="link_share" onclick="valCopy('https://unadat.com/invite_redirect?ref=836a9a95')"><img src="img/sh_icon_link.png" class="sh_icon"></span><a href="mailto:?subject=<Share Unadat>&amp;body=<https://unadat.com/invite_redirect?ref=836a9a95>" target="_blank" rel="noopener noreferrer"><img src="img/sh_icon_email.png" class="sh_icon"></a></div></div></div><div id="invite_tooltip" class="ticker_tooltip blue_tooltip" style="left:calc(100% - 297px);top:calc(17% + 15em);width:295px;text-align:left;z-index:102;"><p>You received an invitation.</p><p>See how Unadat helps users find support and outsmart their debt. Sign up for unlimited free tools for you and your family to take control of money together, whatever your income is. Meet awesome people, learn from each other and share your skills and knowledge.</p><p><a href="https://unadat.com/signup"><b>Accept invitation</b></a><br>It's free, quick, and easy."</p></div>
+    <div class="alert_bottom" id="link_alert"></div>
+
+    <div class="goal_store_searchbar_container goal_store_searchbar_container_igs">
+        <input type="search" id="searchQueryInput" name="searchQueryInput" class="form-control mt-0" placeholder="Search Goals Store" value="" style="display:inline;height:3.5em;border-radius:0.5rem;">
+        <svg style="width:2rem;height:2rem;position:absolute;bottom:0.75rem;right:1rem;opacity:0.5;" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg>
+    </div>
+	
+	<section class="goal igs_main_section">
+		<div class="goal-info" style="width:65vw; justify-content: space-between;">
+            <div class="goal-title-container" style="display:flex; justify-content: space-between;">
+                <div class="left-side-info" style="width:75%;">
+                    <div class="goal-title">
+                        <h1 style="font-size: 2.5rem; margin-top:0;" id="goal_template_title" class="goal_template_title goal_template_element">Help Me Decide </h1>
+                    </div>
+                    <div class="choice">
+                        <span class="gs_choice_container gs_choice_container_inline"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span> in &nbsp;<span id="goal_template_category_in" class="goal_template_element">Partners</span>
+                    </div>
+                    <div class="choiceDiff">
+                        <p style="font-size: 1.5rem;"> Powered by <span class="goal_template_element" id="goal_template_poweredby">EveryDay Life</span></p>
+                        <p style="font-size: 20px;"> Visit the <span class="goal_template_element" id="goal_template_poweredbystore"><a href="everydaylifelanding">Visit the EveryDay Life Store</a></span></p>
+                        
+                    </div>
+                    <div class="ratings" style="margin-bottom:1rem;">
+                        <span style="font-size:1.2rem; color:rgb(255,165,0); display:inline-block; letter-spacing:0.15rem;">★★★★☆</span>
+                        <span>&nbsp;<u><span id="goal_template_reccount" class="goal_template_element">40</span> Ratings</u></span>
+                    </div>
+                    
+                    <div class="recommended-level" style="font-size:0.75em;">
+                        <p>Recommended User Level <span id="goal_template_rec_userlevel" class="goal_template_element">10</span>
+                    </p></div>
+
+                    <h1 style="font-size:25px; margin-bottom:3rem;">
+                        Vigor
+                        <select style="margin-left:1rem;font-size:1rem;">
+                            <option value="low">Low</option>
+                            <option value="med">Medium</option>
+                            <option value="hgh">High</option>
+                        </select>
+                    </h1>
+                    <!--
+                    <div class="complexity-list" style="text-align:center; font-size:1.5rem; padding-left: 5rem; padding-right: 5rem;">
+                        <h1 style="font-size:25px; margin-bottom:1rem;">Complexity</h1>
+                        <ul class="comp-list">
+                            <li class="sub-comp" id="comp_list_low">LOW</li>
+                            <li class="sub-comp" id="comp_list_med">MEDIUM</li>
+                            <li class="sub-comp" id="comp_list_high">HIGH</li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+
+                <div class="goal-image-container">
+                    <img src="goalCardImage.png" class="goal-img-big goal_template_element" id="goal_template_img_main">
+                </div>
+			</div>
+
+            <div class="well-with">
+                <h1 style="font-size:25px;">This Goal Goes Well With:</h1>
+                <!--<p>Discover goals that align with your life plan and what makes them a good fit for you.</p>-->
+                <ul class="well-list">
+                    <li class="sub-well">
+                        <h1 class="s-header" style="font-size:20px;">Fits Other Goals:</h1>
+                        <div>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                        </div>
+                    </li>
+                    <li class="sub-well">
+                        <h1 class="s-header" style="font-size:20px;">Matches Budget:</h1>
+                        <div>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                        </div>
+                    </li>
+                    <li class="sub-well">
+                        <h1 class="s-header" style="font-size:20px;">Pursued By Your Friends:</h1>
+                        <div>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator igs_circle_indicator_filled"></span>
+                            <span class="igs_circle_indicator"></span>
+                            <span class="igs_circle_indicator"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+		</div>
+
+        <div class="what-we-need-container">
+            <div class="what-we-need" style="max-width:26.125rem;">
+                <!--
+                <h1 style="font-size:25px; padding-bottom:1rem;">Here's what we need</h1>
+                <ul class="need-list goal_template_element" id="goal_template_inputs">
+                    <li class="sub-need-checked">Total Cost
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Monthly Payment
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Frequency
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Saved So Far
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Term Length
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Interest Rate
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Monthly Budget
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sub-need-checked">Credit Score
+                        <div class="need-check">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                </ul>
+                -->
+                <div class="what-we-need-button">
+                    <button id="20" class="addToGoals" type="button" onclick="" style="margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#FFFFFF; background-color:#5693F2; width: 14.5rem;">Add To My Goals</button>
+                    <button class="saveForLater" type="button" onclick="" style="margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#5693F2; width: 14.5rem;">Save For Later</button>
+                    <button class="make-challenge">Make it a Challenge</button>
+                    <a href="" style="padding-top:.5rem;">Add to My Goals Without Details</a>
+                </div>
+                <p class="text-box">Please consult your qualified financial advisor before starting any goal or plan. Unadat nor its affiliates will be liable for any injury sustained as a result of your participation.</p>
+            </div>
+            <!--
+            <h4>Start Still Goal →
+                <label for="start-date">Select Start Date:</label>
+                <input type="date" class="gs_main_date" id="start-date" name="start-date" placeholder="dd/mm/yyyy" required>
+            </h4>
+            <h4>Achieve Still Goal →
+                <label for="start-date">Select Start Date:</label>
+                <input type="date" class="gs_main_date" id="start-date" name="start-date" placeholder="dd/mm/yyyy" required>
+            </h4>
+            -->
+            <div class="socials" style="text-align: center; opacity: .25; max-width:26.125rem;">
+                <h1 style="font-size:25px;">Share This Goal</h1>
+                <div class="social-icons">
+                    <img src="img/link_img.png" class="social-img">
+                    <img src="img/twitter_img.png" class="social-img">
+                    <img src="img/facebook_img.png" class="social-img">
+                    <img src="img/instagram_img.png" class="social-img">
+                    <img src="img/linkedin_img.png" class="social-img">
+                </div>
+            </div>
+		</div>
+	</section>
+	
+	<section class="goal-about igs_main_section" style="margin-top:-10rem; padding-bottom:2rem;">
+        <h1 style="font-size: 2rem;">About This Goal</h1>
+        <div class="social-about" style="font-size:1rem; font-weight:bold;">
+            <p>Completion Rate: XX%</p>
+            <p>Used By JohnSmith123, JohnSmith456, and 105 others.</p>
+            <p>By accomplishing this goal, you can earn 240 points and 2 badges.</p>
+        </div>
+        <p id="goal_template_description" class="goal_template_element"> 
+            The Help Me Decide Insurance Calculator, by Unadat, simplifies the process of selecting the right insurance plan by providing a clear, data-driven comparison between Whole Life and Term Life insurance. With an intuitive interface and advanced calculation methods, this tool helps you make an informed decision based on your financial goals, risk tolerance, and coverage needs.
+        </p>
+        <p id="goal_template_description" class="goal_template_element"> 
+            By using industry insights and user-specific data, our calculator delivers personalized based recommendations, guiding you toward the insurance type that best aligns with your long-term security and investment preferences. Whether you're seeking lifelong coverage or a more flexible, cost-effective solution, this tool ensures you receive a breakdown of your options.
+        </p>
+        <p id="goal_template_description" class="goal_template_element"> 
+            Once you've determined which insurance type suits you best, you can further refine your selection by choosing a detailed financial goal. This next step will provide a precise estimate of your monthly premium, helping you plan with confidence. Our goal is to make insurance decisions simple, personalized, and transparent, so you can secure the coverage that fits your life.
+        </p>
+        
+           
+            
+        <div class="additional-info">
+            <div class="add">
+                <h1 style="font-size:25px;"><span id="goal_template_comp_time" class="goal_template_element">5</span> <span id="goal_template_comp_units" class="goal_template_element">minutes</span></h1>
+                <p>Avg. Completion Time</p>
+            </div>
+
+            <div class="add">
+                <h1 style="font-size:25px;"><span id="goal_template_duration_min" class="goal_template_element">5</span> - <span id="goal_template_duration_max" class="goal_template_element">10</span> <span id="goal_template_duration_units" class="goal_template_element">years</span></h1>
+                <p>Avg. Duration</p>
+            </div>
+
+            <div class="add">
+                <h1 style="font-size:25px;"><span id="goal_template_duration_min" class="goal_template_element">Low</span> - <span id="goal_template_duration_max" class="goal_template_element">Moderate</span> </h1>
+                <p>Difficulty</p>
+            </div>
+
+            <div class="add">
+                <h1 style="font-size:25px;" id="goal_template_item_amt" class="goal_template_element">$1100</h1>
+                <p>Avg. <span id="goal_template_item_typ" class="goal_template_element">Insurance</span></p>
+            </div>
+
+            <div class="add">
+                <h1 style="font-size:25px;" id="goal_template_commitment" class="goal_template_element">Monthly</h1>
+                <p>Commitment</p>
+            </div>
+
+            <div class="add">
+                <h1 style="font-size:25px;"><span id="goal_template_totusers" class="goal_template_element">10000</span> Users</h1>
+                <p>Total Users</p>
+            </div>
+        </div>
+
+        <div class="choose-plan-flex">
+			<div class="choose-plan" id="chooseplan_container">
+				<h1 class="heading">Choose this plan if</h1>
+                <ul id="goal_template_chooseplan" class="goal_template_element">
+                <li>You want a personalized recommendation tailored to your financial situation, goals, and risk tolerance.</li>
+                <li>Need clear results with a breakdown to determine if whole or term life suits you more.</li>
+                <li>Want user-friendly interface that explains key factors like policy duration, death benefits.</li>
+                <li>Value transparent tool that makes it easier to simplify complex insurance terminology.</li>
+                <li>You prioritize data privacy and security, with robust encryption protecting your personal information throughout the process.</li> 
+            </ul>
+			</div>
+		</div>
+
+        <div class="choose-plan" style="max-width:1200px;margin:0 auto;margin-top:2em;">
+            <table class="dash_nav_table" style="margin-bottom:1.5em;">
+            <tbody>
+                <tr class="mob_hidden">
+                    <td class="nav_big_cell_link_filtering nav_prereq_ms_tabber link_filtering_table_active">Prerequisites</td>
+                    <td class="nav_big_cell_link_filtering nav_prereq_ms_tabber">Milestones</td>
+                </tr>
+            </tbody></table>
+            <div class="goal_task_container" style="border:0px solid black;" id="goal_template_prereqs"><div class="milestone" style="border: 0px solid #ccc;border-radius:6px;"><table style="width:100%;border-radius:4px;"><tbody><tr><td style="width:90%;padding:0.5em;"><div>Have at least $1,000 in your emergency fund</div><div style="color:rgb(128,128,128)">Prerequisite</div></td><td style="width:10%;padding:0.5em;min-width:2em;">O</td></tr></tbody></table></div><div class="milestone" style="border: 0px solid #ccc;border-radius:6px;"><table style="width:100%;border-radius:4px;"><tbody><tr><td style="width:90%;padding:0.5em;"><div>Earn over $20,000 yearly</div><div style="color:rgb(128,128,128)">Prerequisite</div></td><td style="width:10%;padding:0.5em;min-width:2em;">O</td></tr></tbody></table></div><div class="milestone" style="border: 0px solid #ccc;border-radius:6px;"><table style="width:100%;border-radius:4px;"><tbody><tr><td style="width:90%;padding:0.5em;"><div>Achieve Level 2 on Unadat</div><div style="color:rgb(128,128,128)">Prerequisite</div></td><td style="width:10%;padding:0.5em;min-width:2em;">O</td></tr></tbody></table></div><div class="milestone" style="border: 0px solid #ccc;border-radius:6px;"><table style="width:100%;border-radius:4px;"><tbody><tr><td style="width:90%;padding:0.5em;"><div>Complete your Unadat profile</div><div style="color:rgb(128,128,128)">Prerequisite</div></td><td style="width:10%;padding:0.5em;min-width:2em;">O</td></tr></tbody></table></div></div>
+            <div class="goal_task_container" style="border:0px solid black;display:none;" id="goal_template_milestones"></div>
+        </div>
+
+        <div class="more-detailed-milestones" style="width:100%;">
+            <h1 style="font-size:24px; padding-bottom:1rem;text-align:center;">
+                Want to see more detailed Milestones?
+                <button class="viewOnMyDashboard" type="button" onclick="" style="height:2.5rem; margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#FFFFFF; background-color:#5693F2; width: 14.5rem;">View On My Dashboard</button>
+            </h1>
+        </div>
+
+        <div class="disclaimer">
+            <p style="margin-top: 0.5rem; margin-bottom:0.5rem; line-height:1.25rem;"> Unadat will create a solution tailored to hitting more motivational milestones, faster. <br> Boosts, family and sponsers contributions are always available for you to tweak your progress</p>
+        </div>
+    </section>
+	
+    <hr class="separating_hr">
+    
+    <section class="frequently-used-container igs_main_section" style="padding-left:3rem; margin-top:-5rem; padding-bottom:2rem;">
+        <h1 style="font-size:25px;">Frequently Used With</h1>
+
+        <div id="freq" class="freq-used">
+    <div id="22" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="22" data-glength="long" data-gtype="goal" data-gitem="mortgages" data-gtitle="Buy a house next year">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="22">
+                <img src="img/goal_store/gs-card-monster_buy_house.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=22">Buy a house next year</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time home buyer plan to a true home
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;5.0</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(356)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('22')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div><div class="plus-sign" style="display: flex; align-items: center; id=" plus-sign"=""><h1 style="font-size:100px;margin-top:0;font-weight:100;">+</h1></div>
+    <div id="23" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="23" data-glength="medium" data-gtype="goal" data-gitem="loan" data-gtitle="Buy a vehicle">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="23">
+                <img src="img/goal_store/gs-card-monster_buy_vehicle.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=23">Buy a vehicle</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time car buyer plan to a true car
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;4.2</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(135)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('23')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div><div class="freq-buttons" style="display:flex; flex-direction:column; justify-content:center;"><button class="addToGoals" type="button" onclick="" style="height:2.5rem; margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#FFFFFF; background-color:#5693F2; width: 14.5rem;">Add To My Goals</button><button class="saveForLater" type="button" onclick="" style="height:2.5rem; margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#5693F2; width: 14.5rem;">Save For Later</button></div></div>
+
+        
+        <h1 style="font-size:24px;">Skills You Can Earn</h1><br>
+        <div class="goal_template_element row" id="goal_template_skills" style="max-width:60%;margin-left:0px;"><div class="col-md-4 col-6"><p style="font-size:1.2rem;">Decision-making</p></div><div class="col-md-4 col-6"><p style="font-size:1.2rem;">Critical thinking</p></div><div class="col-md-4 col-6"><p style="font-size:1.2rem;">Negotiation skills</p></div></div>
+        
+
+        <div class="earn-badges" style="padding-top:1.5rem; width:95%;margin-bottom:2rem;">
+            <h1 style="font-size:25px;">Earn your badges:</h1>
+            <div class="badges-section">
+                <div class="bdgs">
+                    <p>First Fund Goal Badge</p>
+                    <div class="bdg-checked">
+                        <div class="bdg-name">
+                            <h1 class="bdg-header" style="font-size:20px;">Add Fund Goal to My Goals</h1>
+                        </div>
+                        <div class="checker">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="bdg-checked">
+                        <div class="bdg-name">
+                            <h1 class="bdg-header" style="font-size:20px;">Find Out the Fund Amount Saved</h1>
+                        </div>
+                        <div class="checker">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bdgs">
+                    <p>Accomplished User Badge</p>
+                    <div class="bdg-checked">
+                        <div class="bdg-name">
+                            <h1 class="bdg-header" style="font-size:20px;">Completed 5 Goals</h1>
+                        </div>
+                        <div class="checker">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="bdg">
+                        <div class="bdg-name">
+                            <h1 class="bdg-header" style="font-size:20px;">Add Fund Goal to My Goals</h1>
+                        </div>
+                        <div class="checker-number">
+                            <h1 style="font-size: 25px;">1/3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separating_hr">
+
+    <!--Recommended Div-->
+    <section class="recommended igs_main_section" style="padding-left:3rem; margin-top:-5rem; padding-bottom:2rem;">
+        <h1 style="font-size:25px;">Recommened For You</h1>
+            <div class="req-flex" id="rec" style="display:flex;">
+            
+        
+    <div id="22" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="22" data-glength="long" data-gtype="goal" data-gitem="mortgages" data-gtitle="Buy a house next year">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="22">
+                <img src="img/goal_store/gs-card-monster_buy_house.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=22">Buy a house next year</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time home buyer plan to a true home
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;5.0</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(356)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('22')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="23" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="23" data-glength="medium" data-gtype="goal" data-gitem="loan" data-gtitle="Buy a vehicle">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="23">
+                <img src="img/goal_store/gs-card-monster_buy_vehicle.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=23">Buy a vehicle</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time car buyer plan to a true car
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;4.2</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(135)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('23')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="24" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="24" data-glength="epic" data-gtype="goal" data-gitem="mortgages" data-gtitle="Invest in rental property">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="24">
+                <img src="img/goal_store/gs-card-monster_rental_property.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=24">Invest in rental property</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time rental buyer plan to a true home
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;4.8</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(427)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('24')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="4" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="4" data-glength="medium" data-gtype="goal" data-gitem="mortgages" data-gtitle="Buy a single family in '25">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="4">
+                <img src="img/goal_store/gs-card-monster_single_family.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=4">Buy a single family in '25</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time rental buyer plan to a true home
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;4.1</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(342)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('4')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div></div>
+    </section>
+
+    <hr class="separating_hr">
+
+
+    <!--Friends Viewed Div-->
+    <section class="friends-viewed igs_main_section" style="padding-left:3rem; margin-top:-5rem; padding-bottom:2rem;">
+        <h1 style="font-size:25px;">Friends Also Viewed</h1>
+        <div id="friend" class="friend-flex" style="display:flex;">
+            
+        
+    <div id="11" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="11" data-glength="short" data-gtype="goal" data-gitem="loan" data-gtitle="Save your first $500">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="11">
+                <img src="img/goal_store/gs-card-monster_save_500.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=11">Save your first $500</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    Save up in case for a rainy day
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;3.8</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(154)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('11')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="26" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="26" data-glength="epic" data-gtype="goal" data-gitem="funds" data-gtitle="Save up for retirement">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="26">
+                <img src="img/goal_store/gs-card-monster_retirement.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=26">Save up for retirement</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    Save up for the next vacation day
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;4.9</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(471)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('26')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="3" class="h-100 col-sm-6 col-md-4 col-lg-3 goal_store_item_col" data-gid="3" data-glength="short" data-gtype="goal" data-gitem="funds" data-gtitle="3 months food bank">
+        <div class="gs_border_container">
+            <div class="card align-items-center rounded-top-4 gs_header" id="3">
+                <img src="img/goal_store/gs-card-monster_food_bank.png" class="card-img img-fluid goal_card_img">
+                <span class="align-self-end check_mark_2" style="display:none;font-size: 30px; position:absolute;">✅</span>
+            </div>
+            <div class="text h-100 list-group list-group-flush rounded-bottom-4 gs_midsection_container">
+                <p class="card-title m-1 fs-3 text-center gs_title" style="min-height:4.6rem;">
+                    <a href="individual_goal_template?goal_id=3">3 months food bank</a>
+                </p>
+                <div class="card-text fs-5 m-0 text-left list-group-item gs_midsection" style="min-height:9rem;">
+                    A detailed first time home buyer plan to a true home
+                    <div class="d-flex flex-wrap align-content-center justify-content-between">
+                        <span class="d-flex p-1 mt-2 align-self-start" style="color: orange; margin-bottom:-.8rem; font-size:.85em">
+                            <b><p style="font-family:'Montserrat'">★&nbsp;3.8</p></b>
+                            <p style="color: rgb(135,135,135); font-size:.8em; margin-top:.2em; font-family: 'Montserrat'">&nbsp;(195)</p>
+                        </span>
+                        <span class="gs_choice_container"><span class="gs_choice_span1">UNADAT</span> <span class="gs_choice_span2">CHOICE</span></span>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap justify-content-between list-group-item gs_footer">
+                    <button type="button" class="btn btn-primary goal_add_btn" onclick="saveTest('3')">Add Goal</button>
+                    <p class="m-2 d-flex fs-7 text-center">FREE</p>
+                </div>
+            </div>
+        </div>
+    </div></div>
+    </section>
+
+    <hr class="separating_hr">
+	
+    <!--Reviews Div-->
+    <section class="review-container igs_main_section">
+        <div class="user-rating">
+			<span class="heading">User Rating</span>
+			<span style="font-size: 2em;color: rgb(255,165,0);display: inline-block;letter-spacing: 0.15em;">★★★★☆</span>
+			<p>4.1 average based on 254 reviews.</p>
+			<hr class="separating_hr separating_hr_full">
+			
+			<!--Review Bars-->
+			<div>
+                <div style="min-height:2.5em;">
+                    <div class="side">5 star</div>
+                    <div class="middle">
+                        <div class="bar-container"><div class="bar-5"></div></div>
+                    </div>
+                    <div class="side right">150</div>
+                </div>
+                <div style="min-height:2.5em;">
+                    <div class="side">4 star</div>
+                    <div class="middle">
+                        <div class="bar-container"><div class="bar-4"></div></div>
+                    </div>
+                    <div class="side right">63</div>
+                </div>
+                <div style="min-height:2.5em;">
+                    <div class="side">3 star</div>
+                    <div class="middle">
+                        <div class="bar-container"><div class="bar-3"></div></div>
+                    </div>
+                    <div class="side right">15</div>
+                </div>
+                <div style="min-height:2.5em;">
+                    <div class="side">2 star</div>
+                    <div class="middle">
+                        <div class="bar-container"><div class="bar-2"></div></div>
+                    </div>
+                    <div class="side right">6</div>
+                </div>
+                <div style="min-height:2.5em;">
+                    <div class="side">1 star</div>
+                    <div class="middle">
+                        <div class="bar-container"><div class="bar-1"></div></div>
+                    </div>
+                    <div class="side right">20</div>
+                </div>
+			</div>
+            <!--Review Button-->
+			<div class="write-review">
+                <br>
+                <hr class="separating_hr separating_hr_full">
+				<span class="heading">Review This Goal</span>
+				<p>Share your thoughts with other users</p>
+				<button class="addToGoals" type="button" onclick="" style="margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#FFFFFF; background-color:#19746D;">Write a Review</button>
+			</div>
+        </div>
+
+        <!--User Reviews (text)-->
+        <div class="reviews">
+            <h1 class="heading">Top Reviews</h1>
+			<div class="review">
+                <span class="review-username">USERNAME</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="completion-status">Completion Status: ____</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="review">
+                <span class="review-username">USERNAME</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p class="completion-status">Completion Status: ____</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Collapsible menu-->
+    <div style="padding-top:6vh;">
+        <h1 style="font-size:30px; text-align:center; padding-bottom:2rem;">You may be wondering</h1>
+        <div style="min-height:35em;">
+            <div class="section_header header_land header_land_top" id="header1" onclick="hideContent(1)">
+                <p class="section_header_text section_land">How does it work? <span class="card_landing_label"></span><span class="sec_icon" id="icon1">+</span></p>
+                <div class="section_content" id="content1" style="display: none;">
+                    <p>It's easy. Just choose a goal and sign up for an always-free anonymous Unadat account. The goal will be added to your secure dashboard and personalized milestones will populate your personalized plan. </p>
+                </div>
+            </div>
+
+            <div class="section_header header_land" id="header4" onclick="hideContent(4)">
+                <p class="section_header_text section_land">How much does it cost? <span class="sec_icon" id="icon4">+</span></p>
+                <div class="section_content" id="content4" style="display: none;">
+                    <p>Unadat Goals are free.</p>
+                </div>
+            </div>
+
+            <div class="section_header header_land" id="header2" onclick="hideContent(2)">
+                <p class="section_header_text section_land">How do I choose a goal?<br class="desk_hidden"><span class="sec_icon" id="icon2">+</span></p>
+                <div class="section_content" id="content2" style="display: none;">
+                    <p>To compare goals, milestones, and skill level required, visit the goal page for the achievement you're interested in and look for the details.</p>
+                </div>
+            </div>
+
+            <div class="section_header header_land" id="header3" onclick="hideContent(3)">
+                <p class="section_header_text section_land">How many goals can I add? <span class="sec_icon" id="icon3">+</span></p>
+                <div class="section_content" id="content3" style="display: none;">
+                    <p>It depends on your experience with the app and progression level.</p>
+                </div>
+            </div>
+
+            <div class="section_header header_land" id="header5" onclick="hideContent(5)" style="border-bottom:none;">
+                <p class="section_header_text section_land">How anonymous is Unadat?<br class="desk_hidden"><span class="sec_icon" id="icon5">+</span></p>
+                <div class="section_content" id="content5" style="display: none;">
+                    <p>At Unadat, we value your privacy. Your financial data is yours, and we built Unadat with the idea of anonymity in mind. That is why we do <u>not</u> even ask you for your name.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--SITEMAP-->
+
+        <div class="sm_top">
+	        <p>We don't sell your data. <br class="desk_hidden">Actually, we don't even know who you are. <br class="desk_hidden"><a href="safety">Our commitment to trust and safety &gt;</a></p>
+        </div>
+        <div class="bot-wrapper">
+            <div class="bot-col">
+               <div class="col-4">
+                    <p><b>Services</b></p>
+            	    <p><a href="nodebt" class="map_jlink">Features</a></p>
+                    <p><a href="buyhouse" class="map_jlink">Goals</a></p>
+                    <p><a href="store" class="map_jlink">Gift Shop</a></p>
+                    <p><a href="interns" class="map_jlink">Education</a></p>
+                    <p><a href="interns" class="map_jlink">For Youth</a></p>
+                    <p><a href="business" class="map_jlink">Business</a></p>
+                </div>
+                <div class="col-4">
+                    <p><b>My Unadat</b></p>
+                    <p><a href="dashboard" class="map_jlink">Home</a></p>
+            		<p>Events</p>
+            		<p><a href="feedback" class="map_jlink" id="feed_link">Feedback</a></p>
+            		<br>
+                    <p><b>Our Values</b></p>
+                    <p><a href="free" class="map_jlink">Free</a></p>
+            		<p><a href="anonymity" class="map_jlink">Anonymity</a></p>
+                    <p><a href="interns" class="map_jlink">Education</a></p>
+                    <p><a href="https://dcufintech.org" class="map_jlink">Partners</a></p>
+                </div>
+                <div class="col-4">
+                    <p><b>About</b></p>
+                    <p><a href="signup" class="map_jlink">LifeLine™</a></p>
+                    <p>Unaworth™</p> 
+            		<p>Career</p> 
+                    <p><a href="interns" class="map_jlink">Internships</a></p> 
+                    <p><a href="terms" class="map_jlink">Legal</a></p> 
+                    <p><a href="feedback" class="map_jlink">Support <small><sup>💬</sup></small></a></p> 
+                    <p><a href="deck" class="map_jlink">Investors</a></p>
+            		<p><a href="mailto:sean@unadat.com">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark">  
+            <div class="bot-lin-tool row">
+            	<div class="col-sm-3">
+            		<p><i>2024 © Unadat.com</i>
+            	</p></div>
+            	<div class="col-sm-6">
+                    <p>
+                        <a href="privacy" class="map_jlink">Privacy</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="terms" class="map_jlink">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="donations" class="map_jlink">Pitch In</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="feedback" class="map_jlink">Share</a>
+                    </p>
+            	</div>
+            	<div class="col-sm-3">
+            		<p><a href="http://www.flagofplanetearth.com/#intro-shift"><img src="img/Earth-flag.png" style="width:25px;height:25px"></a> &nbsp; &nbsp; United States &nbsp; &nbsp; 617.383.4445</p>
+                    <p style="margin-bottom:0rem;">
+                        <a href="https://www.tiktok.com/@unadat" class="social_media"><img src="img/Social_Media/TikTokLogo.png" alt="Tik Tok" width="25px" height="25px"></a>
+                        <a href="https://www.instagram.com/unadatgoals/" class="social_media"><img src="https://unadat-wd-dot-ninth-wares-272323.appspot.com/img/Social_Media/InstagramIcon2.png" alt="Instagram" width="25px" height="25px"></a>
+                        <a href="https://www.linkedin.com/company/unadat/mycompany/" class="social_media"><img src="https://unadat-wd-dot-ninth-wares-272323.appspot.com/img/Social_Media/LinkedInIcon.png" alt="LinkedIn" width="25px" height="25px"></a>
+                    </p>
+            	</div>
+            </div>
+        </div>
+    
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap1.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- Utility JavaScript -->
+<script src="js/util.js"></script>
+<!--Creator JavaScript -->
+<script src="js/util_create.js"></script>
+<!--Payment logging JavaScript -->
+<script src="js/util_log.js"></script>
+<!--Circles JavaScript -->
+<script src="js/util_circles.js"></script>
+<!--Left pane JavaScript 
+<script src="js/util_points_tickers.js"></script>-->
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
+<!--Calculation JavaScript -->
+<script src="js/util_time_calcs.js"></script>
+<!--Wellness score JS Functions-->
+<script src="js/util_wellness.js"></script>
+<!--ChoresList JavaScript-->
+<script src="js/util_choresLists.js"></script>
+<!-- Owl Carousel JS-->
+<script src="js/owl.carousel.min.js"></script>
+<!--Quill JS-->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<!-- Script JS -->
+<script src="js/goal_store.js"></script>
+<!--Dark Mode JavaScript -->
+<script src="js/util_dark.js"></script>
+<!-- Currency Script -->
+<script src="js/util_currency.js"></script>
+<!--IGS scripts-->
+<script src="js/util_individual_goals_store.js"></script>
+<!--analytics scripts-->
+<script src="js/util_analytics.js"></script>
+<script>
+    getHref();
+</script>
+
+<!--Goal Card JS Function-->
+<script>
+    var PlusSign='<div class="plus-sign" style="display: flex; align-items: center; id="Plus-Sign"><h1 style="font-size:100px;margin-top:0;font-weight:100;">+</h1></div>';
+    //Append Goal Cards
+    $(document).ready(function(){
+        //freq house next yr
+        addGoalCard("freq", "long", "goal", "mortgages", "gs-card-monster_buy_house.png", "Buy a house next year", "A detailed first time home buyer plan to a true home", 22, '5.0', '356', 1);
+
+        $('#freq').append(PlusSign);
+        //freq buy a vehicle
+        addGoalCard('freq', 'medium', 'goal', 'loan', 'gs-card-monster_buy_vehicle.png', 'Buy a vehicle', 'A detailed first time car buyer plan to a true car', 23, '4.2', '135',1);
+
+        //Add freq buttons to add goal
+        $('#freq').append('<div class="freq-buttons" style="display:flex; flex-direction:column; justify-content:center;">' +
+            '<button class="addToGoals" type="button" onClick="" style="height:2.5rem; margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#FFFFFF; background-color:#5693F2; width: 14.5rem;">Add To My Goals</button>' +
+            '<button class="saveForLater" type="button" onClick="" style="height:2.5rem; margin-top:.5rem; margin-bottom:.5rem; font-size:1rem; padding-left:1rem; padding-right:1rem; padding-top:.5rem; padding-bottom:.5rem; border:none; border-radius: 10px; color:#5693F2; width: 14.5rem;">Save For Later</button>' +
+            '</div>');
+
+        //rec house next yr
+        addGoalCard("rec", "long", "goal", "mortgages", "gs-card-monster_buy_house.png", "Buy a house next year", "A detailed first time home buyer plan to a true home", 22, '5.0', '356', 1);
+        //rec buy vehicle
+        addGoalCard('rec', 'medium', 'goal', 'loan', 'gs-card-monster_buy_vehicle.png', 'Buy a vehicle', 'A detailed first time car buyer plan to a true car', 23, '4.2', '135',1);
+        //rec invest rental
+        addGoalCard('rec', 'epic', 'goal', 'mortgages', 'gs-card-monster_rental_property.png', 'Invest in rental property', 'A detailed first time rental buyer plan to a true home', 24, '4.8', '427',1);
+        //rec single family 25
+        addGoalCard('rec', 'medium', 'goal', 'mortgages', 'gs-card-monster_single_family.png', 'Buy a single family in \'25', 'A detailed first time rental buyer plan to a true home', 4, '4.1', '342',1);
+
+        //friend save 500
+        addGoalCard('friend', 'short', 'goal', 'loan', 'gs-card-monster_save_500.png', 'Save your first $500', 'Save up in case for a rainy day', 11, '3.8', '154',1);
+        //friend save for retirement
+        addGoalCard('friend', 'epic', 'goal', 'funds', 'gs-card-monster_retirement.png', 'Save up for retirement', 'Save up for the next vacation day', 26, '4.9', '471',1);
+        //friend 3mth food bank
+        addGoalCard('friend', 'short', 'goal', 'funds', 'gs-card-monster_food_bank.png', '3 months food bank', 'A detailed first time home buyer plan to a true home', 3, '3.8', '195',1);
+    });
+</script>
+
+<!--AJAX for IGS search-->
+<script>
+    $('#searchQueryInput').keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            igsSearchRecord($('#searchQueryInput').val());
+        }
+    });
+
+    function igsSearchRecord(search_val){
+        result = $.ajax({
+            url: "goals_store_defsearch",
+            type: "POST",
+            data: {search_val}, // Pass the search value
+        });
+        result.success(function(data){
+            if (data== 1) {
+                botAlert('#link_alert',6000,"Redirecting to goals store...");
+                window.location='goals.php';
+            }
+            else{
+                botAlert('#link_alert',6000,"Something went wrong. Please try again in a few minutes.");
+            }
+        });
+        result.error(function(){
+            botAlert('#link_alert',6000,"Something went wrong. Please try again in a few minutes.");
+        });
+    }
+</script>
+
+<!--auto-add goal if coming from login redirect-->
+<script>
+    var auto_add=parseInt('');
+    if(auto_add==1){
+        $(document).ready(function(){
+            $(".what-we-need .addToGoals").click();
+        });
+    }
+</script>
+
+<!--Goal template data formatting and display scripts-->
+<script type="text/javascript">
+    var goal_template_data={"goal_template_id":20,"goal_template_category_in":"Partners","goal_template_complexity":0,"goal_template_rec_userlevel":10,"goal_template_reccount":40,"goal_template_img":"gs-card-monster_term_life_insurance.png","goal_template_poweredby":"EveryDay Life","goal_template_poweredbystore":"<a href=\"everydaylifelanding\">Visit the EveryDay Life Store<\/a>","goal_template_title":"Help Me Decide","goal_template_description":"The Help Me Decide Insurance Calculator, by Unadat, simplifies the process of selecting the right insurance plan by providing a clear, data-driven comparison between Whole Life and Term Life insurance. With an intuitive interface and advanced calculation methods, this tool helps you make an informed decision based on your financial goals, risk tolerance, and coverage needs.","goal_template_chooseplan":"You want to support your family in some of their hardest times.\nYou are a lower income parent looking for financial protection for your kids as they grow up.\nYou have particularly flexible needs.\nYou have a tight budget.","goal_template_inputs":"Age|Yearly Income|Health|Height|Weight|Gender","goal_template_skills":"Budgeting|Investing|Management","goal_template_comp_time":15,"goal_template_comp_units":"minutes","goal_template_duration_min":10,"goal_template_duration_max":null,"goal_template_duration_units":"years","goal_template_difficulty":"Low","goal_template_item_amt":26,"goal_template_item_typ":"Insurance","goal_template_commitment":"Monthly","goal_template_totusers":10000,"goal_template_prereqs":"Have at least $1,000 in your emergency fund|Earn over $20,000 yearly|Achieve Level 2 on Unadat|Complete your Unadat profile","goal_template_milestones":null,"goal_template_unlocks":"Milestones|Boosts|Fundraisers","goal_template_partner":"EveryDay Life"};
+    var goal_template_ms=[];
+
+    console.log(goal_template_ms);
+
+    //format the goal data (break concatenated strings into arrays, account for ugly nulls, etc)
+    function goalTemplateDataFormatting(data){
+        if(!data || data.length==0){
+            return false;
+        }
+        var choose_plan=[];
+        var goal_inputs=[];
+        var goal_prereqs=[];
+
+        //placeholder for recommendation count
+        if(!data.goal_template_reccount || !Number.isInteger(data.goal_template_reccount)){ 
+            data.goal_template_reccount="1000+";
+        }
+
+        //break concatenated strings into arrays and replace original fetched data
+        data.goal_template_milestones=goal_template_ms;
+        data.goal_template_chooseplan=defaultConcatenatedSplit(data.goal_template_chooseplan,'|');
+        data.goal_template_inputs=defaultConcatenatedSplit(data.goal_template_inputs,'|');
+        data.goal_template_prereqs=defaultConcatenatedSplit(data.goal_template_prereqs,'|');
+        data.goal_template_skills=defaultConcatenatedSplit(data.goal_template_skills,'|');
+        data.goal_template_unlocks=defaultConcatenatedSplit(data.goal_template_unlocks,'|');
+    }
+
+    //insert the goal data into the page
+    function goalTemplateDataInsertion(data){
+        var ms_optional_line="";
+
+        $('.goal_template_element').empty();
+        if(!data || data.length==0){
+            return false;
+        }
+        //set ID on add to goals button
+        $(".what-we-need .addToGoals").attr('id',data.goal_template_id);
+        //set goal category
+        $('#goal_template_category_in').empty().text(data.goal_template_category_in);
+        //complexity
+        switch(data.goal_template_complexity){
+            case 0:
+                $('#comp_list_low').addClass('sub-comp-active');
+            break;
+            case 1:
+                $('#comp_list_med').addClass('sub-comp-active');
+            break;
+            case 2:
+                $('#comp_list_high').addClass('sub-comp-active');
+            break;
+            default:
+                $('#comp_list_med').addClass('sub-comp-active');
+            break;
+        }
+        //recommended user level
+        $('#goal_template_rec_userlevel').empty().text(data.goal_template_rec_userlevel);
+        //set rating count
+        $('#goal_template_reccount').empty().text(data.goal_template_reccount);
+        //image sources
+        $('#goal_template_img_main').attr('src','img/goal_store/'+data.goal_template_img);
+        //powered by
+        $('#goal_template_poweredby').empty().text(data.goal_template_poweredby);
+        //powered by store
+        $('#goal_template_poweredbystore').empty().append(data.goal_template_poweredbystore);
+        //goal title
+        $('.goal_template_title').empty().text(data.goal_template_title);
+        //goal description
+        $('#goal_template_description').empty().text(data.goal_template_description);
+        //choose this plan if
+        $('#goal_template_chooseplan').empty();
+        if(data.goal_template_chooseplan.length<1){
+            $('#chooseplan_container').empty();
+        }
+        else{
+            for(let i=0;i<data.goal_template_chooseplan.length;i++){
+                $('#goal_template_chooseplan').append('<li>'+data.goal_template_chooseplan[i]+'</li>')
+            }
+        }
+        //goal inputs
+        $('#goal_template_inputs').empty();
+        for(let i=0;i<data.goal_template_inputs.length;i++){
+            $('#goal_template_inputs').append('<li class="sub-need-checked">'+data.goal_template_inputs[i]+'<div class="need-check"><i class="fa fa-check" aria-hidden="true"></i></div></li>')
+        }
+        //skills
+        if(data.goal_template_chooseplan.length<1){
+            $('#skills_container').empty().css('border','0px solid');
+        }
+        else{
+            $('#goal_template_skills').empty();
+            for(let i=0;i<data.goal_template_skills.length;i++){
+                $('#goal_template_skills').append('<div class="col-md-4 col-6"><p style="font-size:1.2rem;">'+data.goal_template_skills[i]+'</p></div>');
+            }
+        }
+        //completion time
+        $('#goal_template_comp_time').empty().text(data.goal_template_comp_time);
+        //completion units
+        $('#goal_template_comp_units').empty().text(data.goal_template_comp_units);
+        //duration low end
+        $('#goal_template_duration_min').empty().text(data.goal_template_duration_min);
+        //duration high end
+        $('#goal_template_duration_max').empty().text(data.goal_template_duration_max);
+        //duration units
+        $('#goal_template_duration_units').empty().text(data.goal_template_duration_units);
+        //difficulty
+        $('#goal_template_difficulty').empty().text(data.goal_template_difficulty);
+        //debt amount
+        $('#goal_template_item_amt').empty().text('$'+data.goal_template_item_amt);
+        //debt type
+        $('#goal_template_item_typ').empty().text(data.goal_template_item_typ);
+        //commitment
+        $('#goal_template_commitment').empty().text(data.goal_template_commitment);
+        //total users
+        $('#goal_template_totusers').empty().text(data.goal_template_totusers);
+        //goal prerequisites
+        for(let i=0;i<data.goal_template_prereqs.length;i++){
+            $('#goal_template_prereqs').append(
+                '<div class="milestone" style="border: 0px solid #ccc;border-radius:6px;">'+
+                    '<table style="width:100%;border-radius:4px;"><tbody><tr>'+
+                        '<td style="width:90%;padding:0.5em;"><div>'+data.goal_template_prereqs[i]+'</div><div style="color:rgb(128,128,128)">Prerequisite</div></td>'+
+                        '<td style="width:10%;padding:0.5em;min-width:2em;">O</td>'+
+                    '</tr></tbody></table>'+
+                '</div>'
+            );
+        }
+        //goal milestones
+        for(let i=0;i<data.goal_template_milestones.length;i++){
+            if(data.goal_template_milestones[i].ms_template_optional==1){
+                ms_optional_line=" (optional)";
+            }
+            else{
+                ms_optional_line="";
+            }
+            if(data.goal_template_milestones[i].ms_template_text==null){
+                data.goal_template_milestones[i].ms_template_text="";
+            }
+            $('#goal_template_milestones').append(
+                '<div class="milestone" style="border: 0px solid #ccc;border-radius:6px;">'+
+                    '<table style="width:100%;border-radius:4px;"><tbody><tr>'+
+                        '<td style="width:90%;padding:0.5em;"><div>'+data.goal_template_milestones[i].ms_template_title+ms_optional_line+'</div><div style="color:rgb(128,128,128);min-height:1em;">'+data.goal_template_milestones[i].ms_template_text+'</div></td>'+
+                        '<td style="width:10%;padding:0.5em;min-width:2em;"></td>'+
+                    '</tr></tbody></table>'+
+                '</div>'
+            );
+        }
+        //prereq/milestone swap
+        $('.nav_prereq_ms_tabber').click(function(){
+            $('.nav_prereq_ms_tabber').removeClass('link_filtering_table_active');
+            $(this).addClass('link_filtering_table_active');
+            $('#goal_template_prereqs,#goal_template_milestones').toggle();
+        });
+    }
+    function defaultConcatenatedSplit(db_data,split_var='|'){
+        if(db_data==null || db_data==''){
+            return [];
+        }
+        else{
+            return db_data.split(split_var);
+        }
+    }
+
+    window.onload=goalTemplateDataFormatting(goal_template_data);
+    window.onload=goalTemplateDataInsertion(goal_template_data);
+    //scuffed dark mode set
+    if(darkMode=="true"){
+        setDark();
+    }
+    else{
+        setLight();
+    }
+</script>
+
+
+<!--Payoff Time Script-->
+<script type="text/javascript">
+    var login="emma.katz06@gmail.com";
+
+    //for cyclical time to end
+    var calc_data=[[[100,0,1,0]],[],[],[],[]];
+    var spend_arr=[0,0,0,0];
+
+    var cyc_res;
+    var payoff_funds=0;
+
+    //payoff times
+    var card_payoff=0;
+    var loan_payoff=0;
+    var mort_payoff=0;
+    var fund_payoff=0;
+    
+    currency_symbol=setCurrencySymbol("");
+
+    if(login.length>0 && login!=''){
+        var nav_master_arr=JSON.parse("{\"log_cards\":[],\"log_loans\":[],\"log_funds\":[],\"log_morts\":[],\"stor_chores\":[],\"story_ct\":0,\"items_share\":[],\"discover_users\":[{\"user_id\":\"cadaw41047@cybtric.com\",\"matching_goals\":4,\"debt_budget_difference\":0.5,\"avatar\":\"2|1\",\"nickname\":\"Anonymous\",\"email_code\":\"e8bd0f9a\"},{\"user_id\":\"azayeveric@gmail.com\",\"matching_goals\":8,\"debt_budget_difference\":0,\"avatar\":\"1|2\",\"nickname\":\"RealCats\",\"email_code\":\"15c312c8\"}],\"circ_inv\":[],\"circ\":[],\"friend_code\":\"836a9a95\",\"circ_onload\":null}");
+        navbarFullWrapper(nav_master_arr);
+
+        getPmtVals(calc_data[0][0][0],spend_arr,calc_data[0][0][1],calc_data[0][0][2],calc_data[1].length,calc_data[2].length,calc_data[3].length,calc_data[4].length);
+        cyc_res=timeToEndDataPrep(calc_data[1],calc_data[2],calc_data[3],calc_data[4],spend_arr[0],spend_arr[1],spend_arr[2],spend_arr[3],calc_data[0][0][3]);
+        card_payoff=cyc_res[3][0];
+        if(isNaN(card_payoff)){
+            card_payoff=0;
+        }
+        loan_payoff=cyc_res[3][1];
+        if(isNaN(loan_payoff)){
+            loan_payoff=0;
+        }
+        fund_payoff=cyc_res[6];
+        if(isNaN(fund_payoff)){
+            fund_payoff=0;
+        }
+        displayPayoffTime("card");
+    }
+
+    function displayPayoffTime(goalType) {
+        var payoffTime = 0;
+        switch (goalType) {
+            case "card":
+            payoffTime = card_payoff;
+            break;
+            case "loan":
+            payoffTime = loan_payoff;
+            break;
+            case "mortgage":
+            payoffTime = mort_payoff;
+            break;
+            case "fund":
+            payoffTime = fund_payoff;
+            break;
+            default:
+            console.log("Invalid goal type.");
+            return;
+        }
+        var payoffMessage = "Your payoff time for " + goalType + " is " + payoffTime + " months.";
+        $("#payoff-message").innerHTML=payoffMessage;
+    }
+</script>
+
+<script>
+if(goal_template_data.length === 0 || !goal_template_data){
+    // DisplayPopup
+    customPopOpen('ErrorPopUp');
+}
+</script>
+
+<!--Make Challenge Checkbox-->
+<script type="text/javascript">
+    $('.make-challenge').on('click', function(){
+        $(this).toggleClass('make-challenge-active');
+    });
+</script>
+
+<script type="text/javascript">
+    $(window).scroll(function() {
+        navbarRecolor(0);
+    });
+    window.onload=navbarRecolor(0);
+</script>
+
+    <!--
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            const currentActiveItem = document.querySelector('.timeline-item.active');
+            if (currentActiveItem) {
+                currentActiveItem.classList.remove('active');
+            }
+            event.currentTarget.classList.add('active');
+        });
+    });
+-->
+    
+
+
+<!--FAQ Scripts-->
+<script type="text/javascript">
+    window.onload=$('.section_content').css('display','none');
+    $('.section_header').click(function(){
+        var disp='';
+        disp=$(this).children('.section_content').css('display');
+        $('.section_content').css('display','none');
+        $('.sec_icon').empty().text('+');
+        if(disp=='none'){
+            $(this).children('.section_content').css('display','block');
+            $(this).find('.sec_icon').empty().text('-');
+        }
+        else{
+            $(this).children('.section_content').css('display','none');
+            $(this).find('.sec_icon').empty().text('+');
+        }
+    });
+</script>
+
+
+</body></html>
