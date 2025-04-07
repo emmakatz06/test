@@ -1,0 +1,121 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Center items along the main axis */
+    margin-bottom: 20px;
+}
+
+#AddMilestonePopup {
+    display: none; /* Initially hide the popup */
+    position: fixed; /* Fixed positioning to overlay the content */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the popup */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    padding: 20px; /* Padding */
+    max-width: 500px; /* Maximum width */
+    z-index: 1000; /* Ensure the popup appears above other content */
+}
+
+#supporterMilestoneBtn {
+    background-color: rgb(57, 149, 255);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#supporterMilestoneBtn:hover {
+    background-color: rgb(179, 236, 255);
+    color: black;
+}
+
+/* Supporter Milestone Popup Styles */
+#supporterMilestonePopup {
+    display: none; /* Initially hide the popup */
+    position: fixed; /* Fixed positioning to overlay the content */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the popup */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    padding: 20px; /* Padding */
+    max-width: 500px; /* Maximum width */
+    z-index: 1000; /* Ensure the popup appears above other content */
+}
+
+/* Close button styles for the Supporter Milestone Popup */
+#supporterMilestonePopup .close-btn {
+    position: absolute; /* Position relative to the popup */
+    top: 10px; /* Top offset */
+    right: 10px; /* Right offset */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    outline: none; /* Remove focus outline */
+}
+
+/* Close button styles */
+#AddMilestonePopup .closebtn {
+    position: absolute; /* Position relative to the popup */
+    top: 10px; /* Top offset */
+    right: 10px; /* Right offset */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    outline: none; /* Remove focus outline */
+}
+
+
+/* Styling for the black popup */
+.popup {
+    display: none; /* Initially hide the popup */
+    position: fixed; /* Fixed positioning to overlay the content */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Ensure the popup appears above other content */
+    overflow: auto; /* Allow scrolling if content overflows */
+    text-align: center; /* Center the content horizontally */
+}
+.popup-content {
+    /* Other styles... */
+    max-width: 100%; /* Ensure content doesn't exceed the popup width */
+    max-height: 100%; /* Ensure content doesn't exceed the popup height */
+}
+.popup .close-btn {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.popup-header .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.5); /* Transparent color */
+    background-color: transparent; /* Transparent background */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.popup-header h2 {
+    margin: 0;
+}
+

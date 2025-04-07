@@ -1,0 +1,922 @@
+.top{
+	text-align: center;
+	align-items: start;
+	
+}
+@media (max-width: 740px){
+    .goal-title-container{
+        display:flex;
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+}
+@media (max-width: 1300px){
+    .goal, .goal-info, .what-we-need-container, .goal-about, .choose-plan-flex, .frequently-used-container, .badges-section, .when-to-start, .review-container, .req-flex, .friend-flex, .freq-used, .recommended, .friends-viewed{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .goal-info{
+        width: 80vw !important;
+    }
+    .goal-title-container{
+        display:flex;
+        align-items: center;
+        width:100% !important;
+    }
+    .frequently-used-container{
+        padding-left:0rem !important;
+    }
+    .what-we-need-container{
+        width:90vw !important; 
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+    .goal{
+        margin-left:0rem !important;
+    }
+    .goal-title{
+        font-size:1.5rem !important;
+        order:1;
+    }
+    .left-side-info{
+        width:100% !important;
+    }
+    .complexity-list{
+        padding-left:0rem !important;
+        padding-right:0rem !important;
+    }
+    .goal-img-big{
+        max-width:18.75rem !important;
+        max-height:18.75rem !important;
+    }
+    .searchbar{
+        margin-left:0rem !important;
+        padding-left:0rem !important;
+    }
+    .need-list{
+        font-size:.688rem !important;
+    }
+    .make-challenge{
+        width:130% !important;
+    }
+    .addToGoals{
+        width:100% !important;
+    }
+    .saveForLater{
+        width:100% !important;
+    }
+    .add{
+        width:50% !important;
+    }
+    .additional-info{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .well-list{
+        display:flex;
+        padding:0 !important;
+    }
+    .sub-well{
+        width:33% !important;
+    }
+    .s-header{
+        font-size:0.938rem !important;
+    }    
+    .skills-box{
+        width: 90% !important;
+    }
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333% !important;
+        flex: 0 0 33.333333% !important;
+        max-width: 33.333333% !important;
+    }
+    .choose-plan{
+        font-size:1.125rem !important;
+    }
+    .bdg{
+        width:90% !important;
+    }
+    .bdg-checked{
+        width:90% !important;
+    }
+    .when-to-start{
+        width: 95% !important;
+    }
+    .wts-header{
+        font-size: 1.25rem !important;
+    }
+    .time-buttons{
+        width:100% !important;
+        display:flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-left: 0rem !important;        
+    }
+    .tbutton{
+        width: 30% !important;
+        margin-left:0rem !important;
+    }
+    .prereq{
+        font-size:1.125rem !important;
+    }
+    .user-rating{
+        width:80% !important;
+        padding-left: 0rem !important;
+    }
+    .reviews{
+        width:85% !important;
+        padding-left:0rem !important;
+    }
+    .earn-badges{
+        width:85% !important;
+    }
+    .bdg-header{
+        font-size:1.125rem !important;
+    }
+    .checker{
+        font-size:1.125rem !important;
+    }
+    .checker-number{
+        font-size:1.125rem !important;
+    }
+    .recommended{
+        padding-left:0rem !important;
+    }
+    .friends-viewed{
+        padding-left:0rem !important;
+    }
+    #itm2{
+        width:100% !important;
+    }
+}
+
+.igs_main_section{
+    max-width:1500px;
+    margin:0 auto;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchbar{
+	margin-left:20px;
+}
+
+.goal{
+	display:flex;
+}
+
+.goal-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.goal-title{
+	display: flex;
+}
+
+.goal-img{
+	height: auto;
+	width: auto;
+	max-width: 53px;
+	max-height: 53px;
+    margin-right:1em;
+}
+
+.goal-img-ex {
+    display: flex;
+    justify-content: space-between;
+    border: 10px solid transparent;
+    height: auto;
+    width: auto;
+    max-width: 53px;
+    max-height: 53px;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .goal-img-ex {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+.goal-img-cyber{
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap;
+	margin: 50px 100px;
+    max-width: 500px;
+	max-height: 500px;
+}
+
+.goal-img-big{
+    height:auto;
+    width:auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.choice{
+    display:flex;
+    margin-top: 1rem;
+}
+.choiceDiff{
+    display:block;
+    margin-top: 1rem;
+}
+
+.align_choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.unadat-choice{
+    height: auto;
+    width: auto;
+    max-height: 21px;
+    max-width: 91px;
+}
+
+.igs_circle_indicator{
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid #A6E9C7;
+    margin-right:0.25em;
+}
+.igs_circle_indicator_filled{
+    background-color:#A6E9C7;
+}
+
+.what-we-need-container{
+    display:flex;
+    flex-direction:column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.what-we-need{
+	border: 1px solid;
+	border-radius: 25px;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.need-list{
+	columns:2;
+	list-style-type:none;
+	padding:0;
+	text-align: center;
+}
+
+.sub-need{
+	border: 2px solid #19746D; 
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top:.5rem;
+	padding-bottom:.5rem;
+}
+
+.sub-need-checked{
+    border:2px solid #EAF8F9;
+	background-color: #EAF8F9; 
+    color:#19746D;
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top:.5rem;
+	padding-bottom:.5rem;
+    display:flex;
+}
+
+.well-list{
+    columns:3;
+    list-style-type:none;
+}
+
+.sub-well{
+    display:flex;
+    flex-direction: column;
+}
+
+.need-check{
+    margin-left:auto; 
+    float:right;
+    padding-left: .5rem;
+    opacity: .8;
+    padding-top:.25rem;
+}
+
+.what-we-need-button{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.make-challenge{
+    margin-top:.5rem;
+    margin-bottom:.5rem;
+    font-size:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    border:1.5px solid #d3d3d3;
+    border-radius: 10px;
+    color:rgb(86,147,242);
+    background-color:rgb(255, 255, 255);
+    width: 14.5rem;
+}
+
+.make-challenge-active{
+    background-color: #5693F2;
+    color: #ffffff;
+}
+
+.text-box{
+	width:300px;
+	word-wrap:break-word;
+	text-align: center;
+    padding-top:1rem;
+    /*
+    border: 2px solid #19746D;
+    background-color: #EAF8F9;
+    */
+}
+
+.comp-list{
+	columns:3;
+	list-style-type:none;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align:center;
+}
+
+.sub-comp{
+	border: 2px solid #19746D; 
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top:.75rem;
+	padding-bottom:.75rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.sub-comp-active{
+    border: 2px solid #19746D; 
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top:.75rem;
+	padding-bottom:.75rem;
+	font-size: 1rem;
+	font-weight: bold;
+    color:#ffffff;
+    background-color: #19746D;
+}
+
+.signinBox{
+	border: 1px solid;
+	border-radius: 25px;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding-top: 1rem;
+	padding-left:2rem;
+	padding-right:2rem;
+	padding-bottom:1rem;
+}
+
+.right-side{
+	display:flex;
+	flex-direction: column;
+	margin-left: 3rem;
+}
+
+.social-img{
+    max-width:40px;
+    max-height:40px;
+    margin-right:10px;
+}
+
+.timeline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 3rem;
+	margin-right: 10rem;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	height: 2px;
+	background-color: black;
+}
+
+.timeline-item {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.timeline-item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -10px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid black;
+}
+.timeline-item:last-child {
+	margin-right: 0;
+}
+.timeline-item.active {
+	background-color: black;
+	color: white;
+}
+.timeline-item.active::before {
+	border-left-color: white;
+}
+.additional-info{
+    display:flex;
+    justify-content: space-between;
+    padding-left:3rem;
+    padding-right:3rem;
+    width:100%;
+}
+.add{
+    text-align:center;
+}
+.separating_hr{
+    border:3px solid #000000;
+    max-width:1800px;
+    width:100%;
+    margin: 0 auto;
+    opacity:0.25;
+}
+.separating_hr_full{
+    width:100%;
+    margin-left:0em;
+    margin-right:0em;
+}
+.choose-plan-flex{
+    width:100%;
+	display:flex;
+    justify-content:left;
+    padding-top: 3.5rem;
+}
+.choose-plan{
+    width:100%;
+}
+.skills-box{
+    border:1px solid ;
+    border-radius:25px;
+    max-width:26.125rem;
+    width:100%;
+    padding:1rem;
+    margin-left:3rem
+}
+.skills{
+    columns:2;
+}
+.skill{
+    border: 2px solid #d3d3d3; 
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top:.25rem;
+	padding-bottom:.25rem;
+    background-color: #d3d3d3;
+    color: #808080;
+    text-align:center;
+}
+.review-container{
+	display:flex;
+}
+.user-rating{
+	padding-left:3rem;
+	width:25vw;
+}
+.reviews{
+	padding-top:4em;
+	padding-left:10vw;
+	width:60vw;
+}
+.review{
+    padding-top:1rem;    
+}
+
+.review-username{
+    font-weight:bold;
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+.fa {
+  font-size: 14pt;
+}
+.fa-circle{
+    color: #A6E9C7;
+}
+.fa-circle-o{
+    color: #A6E9C7;
+}
+.checked {
+  color: orange;
+}
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  border-radius:5px;
+}
+
+/* Individual bars */
+.bar-5 {border-radius:5px;width: 60%; height: 18px; background-color: #19746D;}
+.bar-4 {border-radius:5px;width: 30%; height: 18px; background-color: #19746D;}
+.bar-3 {border-radius:5px;width: 10%; height: 18px; background-color: #19746D;}
+.bar-2 {border-radius:5px;width: 4%; height: 18px; background-color: #19746D;}
+.bar-1 {border-radius:5px;width: 15%; height: 18px; background-color: #19746D;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+
+.freq-used{
+    display:flex;
+}
+
+.when-to-start{
+    display:flex;
+}
+
+.time-buttons{
+    padding-left:3rem;
+}
+
+.tbutton{
+    border: 2px solid #5693F2; 
+	border-radius: 10px;
+	margin-bottom: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top:.75rem;
+	padding-bottom:.75rem;
+	font-size: 1rem;
+	font-weight: bold;
+    width:12.5rem;
+    margin-left:1.5rem;
+    background-color:#ffffff;
+}
+
+.tbutton:focus{
+    background-color:#5693F2;
+    color: #ffffff;
+}
+
+.searchBar {
+    width: 60%;
+    max-width:720px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+ #searchQueryInput {
+    width:100%;
+    padding:0.375rem 0.75rem
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+#searchQuerySubmit:hover {
+   cursor: pointer;
+}
+.badges-section{
+    display:flex;
+    column-gap:10vw;
+}
+.bdg{
+    width: 110%;
+    border:2px solid#EAF8F9;
+    display:flex;
+    border-radius:10px;
+    margin-top:1rem;
+}
+.bdg-checked{
+    width: 110%;
+    border: 2px solid #EAF8F9;
+    background-color: #EAF8F9;
+    display: flex;
+    border-radius: 10px;
+    margin-top:1rem;
+}
+.bdg-name{
+    color: #19746D;
+    padding-left: 1rem;
+    padding-bottom: .25rem;
+}
+.checker{
+    color:#19746D;
+    float:right;
+    margin-left:auto;
+    font-size:20px;
+    padding-right:1rem;
+    padding-top:0px;
+}
+.checker-number{
+    color:#19746D;
+    float:right;
+    margin-left:auto;
+    font-size:25px;
+    padding-right:1rem;
+}
+.disclaimer{
+    border:2px solid #19746D;
+    background-color: #EAF8F9;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    width:calc(100% - 6rem);
+}
+.sm_top{
+    height:2.5em;
+    background-color: rgb(60,84,115);
+    color:white;
+    width:100%;
+    text-align:center;
+    font-size:85%;
+    padding-top:12px;
+    margin: 0px 0px -5px 0px;
+}
+.sm_top p{
+    line-height:1.0;
+    margin: 0px 0px 0px 0px;
+}
+.sm_top p a{
+    color:rgb(50,210,255);
+}
+
+/* Incentivize IGS CSS Styling */
+
+.incentivize_milestones {
+    margin-bottom: 5px;
+}
+
+.incentivize_container_wrapper {
+    display: flex;
+    align-items: center; /* Vertically center the items in the container */
+    gap: 25px; /* Adds space between the text and the button */
+    margin-top: 10px;
+}
+
+.milestone-text {
+    margin: 0; /* Removes default margin from <p> to better control spacing */
+    /* Additional styling as needed */
+}
+
+.incentivize_dashboard_button {
+    background-color: #4087F6; /* Blue background */
+    color: white; /* White text */
+    border-radius: 75px; /* Rounded corners */
+    width: 150px; /* Fixed width, you might want to adjust this */
+    height: 40px; /* Fixed height, consider making it flexible */
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    cursor: pointer; /* Changes cursor to pointer on hover over the button */
+    font-size: 16px; /* Consider using relative units like em or rem */
+    transition: background-color 0.3s; /* Smooth background color change on hover */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .incentivize_dashboard_button {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height to adjust based on content */
+        padding: 10px 0; /* Add some padding for better touch targets */
+        font-size: 14px; /* Smaller font size on smaller screens */
+        border-radius: 50px; /* Adjust border-radius for smaller screens */
+    }
+}
+
+/* Hover effect for the button, optional */
+.incentivize_dashboard_button:hover {
+    background-color: #356ac4; /* Darker shade of blue on hover */
+}
+
+
+.responsive_diagram_incentivize {
+    max-width: 100%; /* Ensures the image is never wider than its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block;
+}
+
+
+/* Cards for savings and breakdown */
+.gs_incentivize_savings_breakdown_wrapper {
+    display: flex;
+    justify-content: center; /* Center the cards for larger views */
+    gap: 30px; /* Adjust the space between cards if necessary */
+    padding: 50px 10%; /* Adds padding around the cards */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    max-width: 100%; /* Set a max width for the layout */
+    margin: auto; /* Center the wrapper */
+}
+
+.incentivize_card {
+    background-color: #ebebeb; /* Based on the image, the background is white */
+    border: 1px solid #dcdcdc; /* A light border as seen in the image */
+    border-radius: 10px; /* Slightly larger border radius for softer edges */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* A softer shadow */
+    padding: 40px; /* More padding for a spacious layout */
+    width: calc(50% - 15px); /* Adjust width based on gap */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.incentivize_card img {
+    max-width: 100%; /* Limit the image width to 100% of its parent */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Display block to remove any whitespace below the image */
+    margin: 20px auto; /* Center the image within the card and add some spacing */
+}
+
+/* Title and subtitles */
+.incentivize_card h2 {
+    margin-top: 0;
+    color: #333333; /* A standard dark grey color for text */
+    font-size: 28px; /* A larger font size for headings */
+    margin-bottom: 20px; /* More space below the heading */
+}
+
+.incentivize_card p {
+    color: #666666; /* A lighter grey for paragraph text */
+    font-size: 16px; /* Standard font size for paragraphs */
+    line-height: 1.6; /* Improve readability with more line height */
+    margin-top: 0;
+    margin-bottom: 20px; /* Space after paragraphs */
+}
+
+/* Smaller text for the required part */
+.incentivize_card p.input-field-card {
+    font-size: 14px; /* Smaller font size for the disclaimer text */
+    color: #999999; /* Even lighter to de-emphasize the disclaimer */
+}
+
+/* Input fields styling */
+.incentivize_card input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Larger padding for a touch-friendly design */
+    margin: 10px 0;
+    border: 2px solid #dcdcdc; /* A solid border that's more visible */
+    border-radius: 5px; /* Consistent with the card border radius */
+    box-sizing: border-box;
+    font-size: 18px; /* Slightly larger font size for inputs */
+}
+
+/* Buttons styling */
+.incentivize_card button {
+    background-color: #4e4e4e; /* Dark grey button to stand out */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-size: 22px; /* Larger font size for buttons */
+}
+
+.incentivize_card button:hover {
+    background-color: #5a5a5a; /* A slight variation on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gs_incentivize_savings_breakdown_wrapper {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .incentivize_card {
+        width: 100%; /* Full width on smaller screens */
+        padding: 30px; /* Slightly less padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .incentivize_card h2 {
+        font-size: 24px; /* Smaller heading size for very small screens */
+    }
+
+    .incentivize_card input[type="text"], .incentivize_card button {
+        font-size: 16px; /* Adjust font size for smaller devices */
+    }
+}
+
+.incentivize-date-field {
+    margin-bottom: 1rem;
+  }
+  
+  .incentivize-date-field label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .incentivize-date-field input[type="date"] {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+ 

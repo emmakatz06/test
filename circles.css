@@ -1,0 +1,98 @@
+.container {
+    width: 85%;
+}
+
+.container {
+    width: 100%;
+    line-height: 1.35 !important;
+    margin: 0 auto;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.row {
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.feature_col {
+    min-height: 23em;
+    /* border: 20px solid rgba(255, 255, 255, 1); */
+    padding: 10px;
+    text-align: left;
+    min-height: 15rem;
+}
+
+/* @media (min-width: 576px) {
+    .col-sm-3 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.col-sm-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 8rem;
+    padding-left: 8rem;
+} */
+.card {
+    border-radius: 0.5em;
+}
+/*
+.card-img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    padding: 1px;
+}*/
+.text {
+    height: 10rem;
+}
+
+.card-user,
+.card-text {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem;
+    min-height: 4rem;
+}
+
+.card-title{
+    min-height: 1.5rem;
+}
+.active, .collapsible:hover {
+    background-color: white;
+}
+
+.add-btn{
+    margin: auto;
+}
+
+.add-btn-cont{
+    min-height: 1.5rem;
+}

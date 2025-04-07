@@ -1,0 +1,261 @@
+#challenge-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #challenge-popup .modal-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 700px;
+  }
+  
+  
+  
+  #challenge-popup .challenge-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  #challenge-popup .challenge-subheading {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    color: gray;
+  }
+  
+  #challenge-popup .learn-more {
+    color: rgb(0, 94, 255);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  #challenge-popup .challenge-modal-body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #challenge-popup .left-column, #challenge-popup .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 330px;
+  }
+  
+  
+  
+  .participants {
+    padding-left: 15%;
+    gap: 5px;
+    font-size: large;
+  }
+  
+  #challenge-popup label {
+    font-weight: 600;
+  }
+  
+  #challenge-popup input, #challenge-popup textarea, #challenge-popup select {
+    border: 1px solid #52d4ff;
+    border-radius: 5px;
+    min-height: 30px;
+    padding-left: 10px;
+  }
+  
+  #challenge-popup textarea {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #challenge-popup .checkboxes input {
+    min-height: 0;
+  }
+  
+  #challenge-popup .left-column label {
+    display: block;
+  }
+  
+  #challenge-popup .date-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #challenge-popup .checkboxes label {
+    font-weight: 400;
+  }
+  
+  #challenge-popup .checkboxes div {
+    margin-left: 15px;
+  }
+  
+  #challenge-popup .create-btn {
+    background-color: rgb(57, 149, 255);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  #challenge-popup .create-btn:hover {
+    background-color: rgb(179, 236, 255);
+    color: black;
+  }
+  
+  #challenge-popup .add-user-section {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  #challenge-popup .add-user-btn {
+    background-color: rgb(0, 150, 30);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  #challenge-popup .add-user-btn:hover {
+    background-color: rgb(131, 255, 173);
+    color: black;
+  }
+  
+  #amount {
+    width: 80px;
+  }
+  
+
+  .required-field::after {
+    content: " *";
+    color: red;
+  }
+
+
+
+
+
+
+
+
+  #edit-challenge-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #edit-challenge-popup .modal-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 700px;
+  }
+  
+  #edit-challenge-popup .challenge-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  #edit-challenge-popup .challenge-subheading {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    color: gray;
+  }
+  
+  #edit-challenge-popup .learn-more {
+    color: rgb(0, 94, 255);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  
+  #edit-challenge-popup .challenge-modal-body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #edit-challenge-popup .left-column {
+    padding-right: 20px;
+  }
+  
+  #edit-challenge-popup .left-column,
+  #edit-challenge-popup .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 330px;
+  }
+  
+  #edit-challenge-popup label {
+    font-weight: 600;
+  }
+  
+  #edit-challenge-popup input,
+  #edit-challenge-popup textarea,
+  #edit-challenge-popup select {
+    box-sizing: border-box;
+    border: 1px solid #8f8f8f;
+    border-radius: 3px;
+    height: 35px;
+    padding-left: 10px;
+    min-width: 9em;
+    outline: none;
+  }
+  
+  #edit-challenge-popup input:focus,
+  #edit-challenge-popup textarea:focus,
+  #edit-challenge-popup select:focus {
+    border: 1px solid rgb(128, 232, 255);
+  }
+  
+  .left-column input {
+    width: 100%;
+  }
+  
+  #edit-challenge-popup textarea {
+    width: 100%;
+  }
+  
+  #edit-challenge-popup #description {
+    height: 60px;
+  }
+  
+  #edit-challenge-popup .checkboxes input {
+    min-height: 0;
+  }
+  
+  #edit-challenge-popup .left-column label {
+    display: block;
+  }
+  
+  #edit-challenge-popup .date-section,
+  #edit-challenge-popup .info-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #edit-challenge-popup .add-user-section input {
+    border: 1px rgb(240, 240, 240) solid;
+  }

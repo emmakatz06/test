@@ -1,0 +1,173 @@
+#login_body{
+    padding-top:7%;
+    background-color:rgb(255,255,255);
+    min-height:100vh;
+}
+.login_container{
+    width:65%;
+    margin: 0 auto;
+    padding-left:5%;
+    padding-right:5%;
+    margin-top:2em;
+    padding-bottom:10px;   
+}
+.login_col{
+    margin-bottom:10px;
+    padding-top: 25px;
+}
+.login_col .loginformtext{
+    text-align:left;
+}
+#log_col_left{
+    border-right:2px solid rgb(220,220,220);
+}
+.login_left_container{
+    position:relative;
+    width:80%;
+    text-align:center;
+    font-size:14pt;
+}
+.loginformtext{
+    border: 2px solid rgb(158,224,255);
+    background-color:rgb(250,250,250);
+    display:block;
+    text-align:left;
+    width: 100%;
+    max-width:35em;
+    margin-bottom: 24px;
+    padding: 6px 20px;
+    border-radius:10px;
+    color: black;
+}
+.loginformtext:focus{
+    background-color:rgb(255,255,255);
+}
+.login_label{
+    text-align:left;
+    font-size:14pt;
+    color:rgb(100,100,100);
+}
+.login_sign_grad{
+    color:white;
+    border-style:solid;
+    border-width:2px;
+    border-color:rgb(14,164,36);
+    background: linear-gradient(to bottom, rgb(14,164,36) 50%,rgb(255,255,255) 50%);
+    background-size: 100% 200%;
+    background-position:top;
+}
+.login_sign_grad:hover{
+    background-position:bottom;
+    border-color:rgb(14,164,36);
+    color:rgb(14,164,36);
+}
+.anon_text{
+    margin-top:10%;
+    font-size:16pt;
+    text-align:center;
+}
+.signup_progress{
+    margin: 0 auto;
+    font-size:120%;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+.signup_progress td{
+    border: 1px solid rgb(240,240,240);
+    padding: 5px 50px 5px 20px;
+}
+.progress_active{
+    background-color: rgba(158,224,255,0);
+}
+.progress_inactive{
+    background-color:rgb(245,245,245);
+    color: rgb(170,170,170);
+}
+.dbout{
+    text-align:left;
+    min-height:2em;
+    margin: -10px 0px 0px 0px;
+}
+#signup_container_step2{
+    position:absolute;
+    visibility:hidden;
+    text-align:left;
+}
+/*Mobile adjustments for login*/
+@media(max-width:768px){
+    .login_container{
+        width:90%;
+        margin-bottom:15px;
+    }
+    .loginformtext{
+        width:100%;
+        margin-bottom:12px;
+    }
+    #login_body{
+        padding-top:50px;
+    }
+    .login_left_container{
+        width:100%;
+    }
+    #log_col_left{
+        border-right-width: 0px;
+        min-height:10em;
+    }
+    .anon_text{
+        margin-top:15px;
+    }
+}
+/*Password Recovery elements*/
+.recover_container{
+    width:65%;
+    margin: 0 auto;
+    padding-left:5%;
+    padding-right:5%;
+    margin-top:2em;
+    padding-bottom:10px;
+    text-align:center;   
+}
+.recover_form{
+    display: inline-block;
+    text-align:center !important;
+}
+/*First-time login popup*/
+.top_message{
+    position: relative;
+    background-color:rgb(206,239,255);
+    width: 100%;
+    min-height: 5em;
+    margin: 0 auto;
+    padding: 25px 20px 5px 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align:center;
+    font-size:130%;
+}
+.message_header{ 
+    margin: 5px;
+}
+.signout_main{
+    font-size:2.5rem !important;
+}
+.signout_link{
+    font-size:2.3rem;
+}
+/*signout image class*/
+.signout_img{
+    width:25%;
+    display:block;
+    height:auto; 
+    margin: 0 auto;
+    margin-top: 15em;
+    max-width:20em;
+}
+@media(max-width:768px){
+    .signout_main{
+    }
+    .signout_link{
+    }
+    .signout_img{
+        margin-top:5em;
+    }
+}

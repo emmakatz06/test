@@ -1,0 +1,179 @@
+#login_body{
+    padding-top:55px;
+    background-color:rgb(255,255,255);
+    min-height:100%;
+}
+.login_container{
+    width:80%;
+    margin: 0 auto;
+    padding-left:1%;
+    padding-right:1%;
+    margin-top:2em;
+    padding-bottom:10px;   
+    max-width:90em;
+}
+.login_col{
+    margin-bottom:90px;
+    /*padding-top: 25px;*/
+    min-height:25em;
+}
+.login_col .loginformtext{
+    text-align:left;
+}
+#log_col_left{
+    border-right:2px solid rgb(220,220,220);
+}
+.login_left_container{
+    position:relative;
+    width:95%;
+    text-align:center;
+    font-size:14pt;
+}
+.loginformtext{
+    border: 2px solid rgb(158,224,255);
+    background-color:rgb(250,250,250);
+    display:block;
+    text-align:left;
+    width: 100%;
+    max-width:35em;
+    margin-bottom: 15px;
+    padding: 6px 20px;
+    border-radius:10px;
+    color: black;
+}
+.loginformtext:focus{
+    background-color:rgb(255,255,255);
+}
+.login_label{
+    text-align:left;
+    font-size:14pt;
+    color:rgb(100,100,100);
+}
+.anon_text{
+    margin-top:0px;
+    font-size:14pt;
+}
+.anon_p{
+    padding-left:5%;
+    color:rgb(100,100,100);
+}
+.dbout{
+    text-align:left;
+    min-height:1.75em;
+    margin: -10px 0px 0px 0px;
+    color:rgb(74,197,255);
+}
+#signup_container_step2{
+    display:none;
+    text-align:left;
+}
+.fin_area{
+    width:100%;
+    border: 2px solid rgb(158,224,255); 
+    padding-left:1em;
+    padding-right:1em;
+}
+.little_signup{
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+#field_out{
+    color:rgb(74,197,255);
+}
+#prog_btn1{
+    margin: 10px 0px 18px 0px;
+}
+/*classes for image radio buttons*/
+.radio_img{
+    height:55px;
+    width:55px;
+    border: 2px solid clear;
+    margin: 2px 10px 5px 10px;
+}
+/*hidden radio button*/
+.radio_img_label{
+    text-align:center;
+    margin-bottom:5px;
+    margin-left: 5px;
+    margin-right:5px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.radio_img_label p{
+    margin-bottom:2px;
+    font-weight: lighter;
+}
+.img_radio{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/*Classes for active and inactive goals buttons*/
+.goals_button{
+    font-weight:normal;
+    padding:3px 7px 3px 7px;
+    border:1px solid rgb(244,244,244);
+    background-color:rgb(244,244,244);
+    color:black;
+    margin: 0px 4px 12px 4px;
+    width: 35%;
+    text-align:center;
+    min-width: 14em;
+    transition: all .2s !important;
+    font-size:90%;
+}
+.goals_button_act{
+    width: 35%;
+    border-color:rgb(209,225,225);
+    background-color:rgb(230,240,250);
+    color:rgb(2,81,122);
+}
+.field_under{
+    font-size:85%;
+}
+#comp_check{
+    color:green;
+}
+/*Mobile adjustments for login*/
+@media(max-width:768px){
+    .login_container{
+        width:100%;
+        padding-left:2%;
+        padding-right:2%;
+        margin-bottom:15px;
+        margin-top: 0px;
+    }
+    .login_col{
+        margin-bottom:50px;
+        padding-top:0px;
+    }
+    .loginformtext{
+        width:100%;
+        margin-bottom:12px;
+    }
+    #login_body{
+        padding-top:50px;
+    }
+    .login_left_container{
+        width:100%;
+    }
+    #log_col_left{
+        border-right-width: 0px;
+        min-height:10em;
+    }
+    .anon_text{
+        margin-top:15px;
+    }
+    .sign_top{
+        text-align:left;
+        margin-left: 6%;
+    }
+    .login_label{
+        margin-bottom:0.2rem;
+    }
+    #prog_btn1{
+        margin-top:5px;
+    }
+}

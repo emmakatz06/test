@@ -1,0 +1,129 @@
+/* navbar */
+.dark {
+    background-color: rgb(10,10,10) !important;
+    color:  rgb(244,244,244);
+}
+/* outer */
+.dark2 {
+    background-color: rgb(20,20,20) !important;
+    color:  rgb(244,244,244);
+}
+/* inner */
+.dark3 {
+    background-color: rgb(31,31,31) !important;
+    color:  rgb(244,244,244);    
+}
+.dark4{
+    background-color: rgb(41,41,41) !important;
+    color:  rgb(244,244,244) !important;  
+}
+/* For links */
+.dark5 {
+     color:  #0080df !important;
+}
+
+/* for changing certin text to white or any other color */
+.dark6{
+    color:  rgb(244,244,244) !important;
+}
+
+/* for buttons and progress bar */
+.dark7{
+    background-color: #0080df;
+    color: rgb(244,244,244);
+}
+.dark8{
+    background-color:rgb(31,31,31) !important;
+    border: 1px solid rgb(100,100,100) !important;
+    color:rgb(244,244,244) !important;
+}
+.light1{
+    background-color: white !important;
+    color: black;
+}
+.dark8:hover{
+    background-color:rgb(36,36,36) !important;
+}
+.dark_hover:hover{
+    background-color:rgb(36,36,36) !important;
+}
+.dark_progress_bar{
+    background-color:rgb(41,41,41);
+    border:1px solid rgb(24,118,242)
+}
+.dark_calendar{
+    opacity:0.28;
+}
+.dark_calendar:hover{
+    opacity:0.45;
+}
+.dark_calendar:disabled{
+    opacity:0.05;
+}
+.dark_calendar_norm{
+    background-color:rgb(100,100,100) !important;
+}
+.dark_calendar_norm:hover{
+    background-color:rgb(136,138,143) !important;
+}
+.progress_inactive.dark_tab_toggle{
+    background-color:rgb(26,26,26);
+    border: 1px solid rgb(31,31,31);
+    color:white !important;
+}
+.progress_inactive.dark_tab_toggle:hover{
+    background-color:rgb(31,31,31);
+    color:white;
+}
+.progress_active.dark_tab_toggle{
+    background-color:rgb(24,119,242);
+    border: 1px solid rgb(31,31,31);
+    color: rgb(200, 200, 200) !important;
+}
+.dark_hover.filter_act{
+    background-color:rgb(31,31,31) !important;
+}
+.dark_col_left{
+    background-color: rgb(20,20,20) !important;
+    color:rgb(173,173,173);
+    border:none;
+}
+.dropdown_link.dark4:hover{
+    color: rgb(244, 244, 244);
+}
+.dark_ticker{
+    background-color:rgb(31,31,31) !important;
+    color:rgb(173,173,173);    
+}
+.dark_col_right{
+    color:rgb(244,244,244);
+}
+.dark_white_text.dark5{
+    color:white !important;
+}
+.dark_mob_nav_toggler{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(100, 100, 100, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.dark_borderless{
+    border:none !important;
+}
+.dark_with_border{
+    border-color:rgb(35,36,37);
+}
+.dark_border {
+    border: white !important;
+}
+/* For financial wellness tab in dashboard */
+.dark-wellness {
+    background-color: rgb(41,41,41) !important;
+}
+.light-wellness {
+    background-color: white !important;
+}
+
+.dark-mode-text {
+    color: white !important;
+}
+.light-mode-text {
+    color: black !important;
+}

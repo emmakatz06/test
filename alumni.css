@@ -1,0 +1,176 @@
+/* overriding  */
+.row {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+.card {
+    width: 100%;
+}
+
+
+ /* HEADER */
+ .cntnr-header {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.cntnr-header img {
+    width: 100%;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 85%;
+}
+
+.centered h1 {
+    color: #000000ad;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+@media (max-width: 1062px) {
+    .centered {
+        font-size: 1.5rem;
+    }
+}
+
+/* UNDER HEADER */
+.under_header {
+    background-color: #f4f4f4;
+    padding: 50px;
+    font-size: 18px;
+}
+
+@media (max-width: 480px) {
+    .under_header {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+
+
+/* ALUMNI */
+
+.alumni-cntnr {
+    max-width: 980px;
+    margin-bottom: 3rem;
+    background-color: white;
+    padding-top: 30px;
+}
+.text-cntnr {
+    margin-top: 3rem;
+}
+
+.text-cntnr h1 {
+    margin-bottom: 3rem;
+
+}
+
+
+.card-img-top {
+    padding: 20% 20% 10%;
+}
+.p_donat {
+    margin-top: 15px;
+    padding-left: 5px;
+    text-decoration: none; 
+    color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    margin: 0;
+}
+
+.text-cntnr p {
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .alumni-cntnr {
+        padding-top: 0;
+    }
+}
+
+/* BENEFITS CARDS   */
+
+    .benef-cntnr {
+        background-color: #E7F1FA;
+        padding-top: 3rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cards-cntnr {
+        margin: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .card-title {
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .card-text {
+        text-align: center;
+    }
+
+    .ben-card-body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 500px;
+    }
+    .ben-card-body .btn{
+        font-size: 14px;
+
+    }
+    
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+   
+
+    @media (max-width: 767px) {
+        .card {
+            margin-bottom: 1.5rem;
+        }
+        .cards-cntnr {
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .cards-cntnr .col-md-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            height: auto;
+        }
+    }
+
+    .under-c {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        text-decoration: none; 
+        color: black;
+    }

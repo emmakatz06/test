@@ -1,0 +1,507 @@
+#challenge-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #challenge-popup .modal-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 700px;
+  }
+  
+  #challenge-popup .challenge-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  #challenge-popup .challenge-subheading {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    color: gray;
+  }
+  
+  #challenge-popup .learn-more {
+    color: rgb(0, 94, 255);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  #challenge-popup .challenge-modal-body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  #challenge-popup .left-column {
+    padding-right: 20px;
+  }
+  #challenge-popup .left-column, #challenge-popup .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 330px;
+  }
+  
+  
+  #challenge-popup label {
+    font-weight: 600;
+  }
+  
+  #challenge-popup input, 
+  #challenge-popup textarea, 
+  #challenge-popup select {
+    box-sizing: border-box;
+    border: 1px solid #8f8f8f;
+    border-radius: 3px;
+    height: 35px;
+    padding-left: 10px;
+    min-width: 9em;
+    outline: none;
+  }
+  
+  #challenge-popup input:focus, 
+  #challenge-popup textarea:focus, 
+  #challenge-popup select:focus {
+    border: 1px solid rgb(128, 232, 255);
+  }
+  
+  .left-column input {
+    width: 100%;
+  }
+  
+  #challenge-popup textarea {
+    width: 100%;
+  }
+  
+  #challenge-popup #description {
+    height: 60px;
+  }
+  
+  #challenge-popup .checkboxes input {
+    min-height: 0;
+  }
+  
+  #challenge-popup .left-column label {
+    display: block;
+  }
+  
+  #challenge-popup .date-section, #challenge-popup .info-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #challenge-popup .add-user-section input{
+    border: 1px rgb(240, 240, 240) solid;
+  }
+  
+  .add-user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .add-user-btn, .participant-avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+    font-family: none;
+  }
+  
+  .add-user-btn {
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px dotted #565656;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    font-weight: 600;
+  }
+  
+  .add-user-btn:hover {
+    background-color: rgb(126, 177, 126);
+    color: white;
+  }
+  
+  .participants-list {
+    margin-top: 5px;
+  }
+  .participant-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right:0.5em;
+  }
+  
+  .participant-container:hover {
+    background-color: rgb(185, 218, 255);
+    border-radius: 20px;
+  }
+  
+  .participant {
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .red-asterisk {
+    color: red;
+  }
+  
+  .user-section {
+    border: 1px solid #070707;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  #invite-title {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  
+  #amount {
+    max-width: 150px;
+  }
+  
+  .create-btn {
+    margin: 15px 0;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0, 94, 255);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .create-btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .participant-container {
+    position: relative;
+    margin-right: 10%;
+  }
+  
+  .dropdown-btn {
+    margin-left: auto;
+    position: relative;
+    background-color: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 75%; /* This will place the dropdown right below the button */
+    left: 95%; /* Aligns the dropdown to the left of the button */
+    width: 140px;
+    background-color: rgb(237, 237, 237); /* Makes the background white */
+    border: 1.5px solid #c8c8c8; /* Adds a border */
+    z-index: 1; /* Make it appear on top of other elements */
+    border-radius: 2px;
+  }
+  
+  .dropdown-content > * {
+    padding: 0px 5px;
+  }
+  .dropdown-content div {
+    display: flex; /* Use flexbox to align the checkbox and label */
+    align-items: center; /* Vertically center the checkbox and label */
+    justify-content: space-between;
+  }
+  
+  .dropdown-content div:hover {
+    background-color: rgb(185, 218, 255);
+  }
+  
+  #challenge-popup .dropdown-content input[type="checkbox"] {
+    min-width: 10px;
+    height: 20px;
+  }
+  
+  #challenge-popup .dropdown-content label {
+    margin: 0; /* Remove the default margin of the label */
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .remove-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px 5px;
+    font-size: 13px;
+    border-top: 2px solid #c8c8c8;
+    width: 100%;
+    font-weight: 400;
+    text-align: start;
+  }
+  
+  .remove-btn:hover {
+    background-color: rgb(185, 218, 255);
+    border-top: 2px solid #c8c8c8;
+  }
+  
+  
+  /* private challenge with slider toggle section */
+  .private-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-section {
+    width: 100%;
+    align-self: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  #private-title {
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  #toggle-text {
+    margin: 0;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 13px;
+  }
+  
+  .toggle-section {
+    align-self: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Milestone styling */
+  #celebration-title {
+    margin-bottom: 10px;
+  }
+  .milestone-title {
+    font-weight: 600;
+  }
+  
+  #challenge-popup .milestone-description {
+    border: none;
+    padding: 0;
+    font-size: 12px;
+  }
+  
+  #challenge-popup .milestone-description:focus {
+    border: none;
+  }
+  
+  #advancedOptions {
+    color: rgb(0, 110, 255);
+  }
+  
+  #lastChanceToJoin {
+    width: 140px;
+  }
+  #challenge-rank-popup{
+    width:800px;
+    height:970px;    
+  }
+  #challenge-rank-popup .modal-content{
+    width:700;
+    height:770px;
+    border:0;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  .rest-of-them {
+    border-radius: 20px;
+    background: #FAFAFA;
+    margin-left: auto; 
+    margin-right:auto;
+    margin-bottom:88px;
+    width: 499px;
+    height: 476px;
+    overflow:auto;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#edit-challenge-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit-challenge-popup .modal-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 700px;
+}
+
+#edit-challenge-popup .challenge-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#edit-challenge-popup .challenge-subheading {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
+  color: gray;
+}
+
+#edit-challenge-popup .learn-more {
+  color: rgb(0, 94, 255);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+#edit-challenge-popup .challenge-modal-body {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#edit-challenge-popup .left-column {
+  padding-right: 20px;
+}
+
+#edit-challenge-popup .left-column,
+#edit-challenge-popup .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 330px;
+}
+
+#edit-challenge-popup label {
+  font-weight: 600;
+}
+
+#edit-challenge-popup input,
+#edit-challenge-popup textarea,
+#edit-challenge-popup select {
+  box-sizing: border-box;
+  border: 1px solid #8f8f8f;
+  border-radius: 3px;
+  height: 35px;
+  padding-left: 10px;
+  min-width: 9em;
+  outline: none;
+}
+
+#edit-challenge-popup input:focus,
+#edit-challenge-popup textarea:focus,
+#edit-challenge-popup select:focus {
+  border: 1px solid rgb(128, 232, 255);
+}
+
+.left-column input {
+  width: 100%;
+}
+
+#edit-challenge-popup textarea {
+  width: 100%;
+}
+
+#edit-challenge-popup #description {
+  height: 60px;
+}
+
+#edit-challenge-popup .checkboxes input {
+  min-height: 0;
+}
+
+#edit-challenge-popup .left-column label {
+  display: block;
+}
+
+#edit-challenge-popup .date-section,
+#edit-challenge-popup .info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit-challenge-popup .add-user-section input {
+  border: 1px rgb(240, 240, 240) solid;
+}

@@ -1,0 +1,36 @@
+.show {
+    display: block;
+}
+
+#community {
+    padding-right: 2em;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    padding: 0px 15px 0px 15px;
+    text-align:right;
+    margin-top: 0px;
+}
+
+#community:hover {
+    color:rgb(0,160,242) !important;
+    background-color: rgb(255,255,255) !important;
+}
+
+#community:focus {
+    outline: none;
+}
+
+
+#navPadding {
+    margin-top: 1em;
+}
+
+.dropElements {
+    text-align:left;
+}

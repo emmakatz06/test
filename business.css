@@ -1,0 +1,86 @@
+.logo_image{
+    margin-top:-5px;
+}
+.learn-bl{
+    font-family: Helvetica Neue,Segoe UI Light,Frutiger,Frutiger Linotype,Dejavu Sans,Arial,sans-serif;
+    background-color:#000000;
+    width:100%;
+    padding: 25px 0px 55px 0px;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 14pt;
+}
+.learn_header{
+    text-align:center;
+    font-size:170%;
+    margin-bottom:40px;
+    color:#FFFFFF;
+}
+.learn_container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top:10px;
+    margin-bottom:30px;
+    font-weight:strong;
+    text-align:center;
+    color:#FFFFFF;
+}
+.business_features{
+    font-family: Helvetica Neue,Segoe UI Light,Frutiger,Frutiger Linotype,Dejavu Sans,Arial,sans-serif;
+    background-color:#FFFFFF;
+    width:100%;
+    padding: 25px 0px 25px 0px;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size: 14pt;
+}
+.business_features_container{
+    width: 40%;
+    margin: 0 auto;
+    min-width:12em;
+}
+.business_screen_container{
+    min-height:80vh;
+    background-image: url(../img/bgu-4grad2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card_header{
+    margin-bottom:5px;
+}
+.bl_subheader{
+    color:rgb(56,132,245);
+    text-align:center;
+    display: block; 
+    width: 90%; 
+    font-size:125%;
+    margin: 0 auto;
+}
+.join-us_container p{
+    display:block;
+    text-align:inherit;
+}
+.parag_left{
+    text-align:left !important; 
+}
+.feature_col{
+    min-height:15em;
+    background-color: rgb(245,245,245);
+    border: 35px solid rgba(255,255,255,1);
+    padding: 15px;
+    text-align:left;
+}
+.landing_form_header{
+    margin-top:0em !important;
+}
+@media(max-width:768px){
+    .feature_col{
+        border: 15px solid rgba(255,255,255,1);
+    }
+    .business_features_container{
+        width:90%;
+    }
+}

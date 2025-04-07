@@ -1,0 +1,143 @@
+.addPrereqBtnStyle {
+    background: #f0f0f0;
+    width: 23%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addPrereqBtnStyle:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-btn {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 650px;
+}
+
+.delete-btn:hover {
+    background-color: #f1f1f1;
+    border-radius: 40px;
+}
+
+.choose-plan-container-main{
+    width : 100%;
+}
+
+
+.prerequisite-container-main{
+    width : 100%;
+}
+
+.prerequisite-container-main{
+    width : 100%;
+}
+
+.skill_container{
+    display: flex;
+    gap: 15px;
+}
+
+.skills-container-main{
+    width: 100%;
+}
+
+.skill_select{
+    width : 100%;
+}
+
+.skillscontainer {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    padding:20px;
+    padding-left:0px;
+}
+.select-btn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+.select-btn:hover {
+    background-color:#e6e6e6 ;
+}
+.select-btn .btn-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+.select-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+}
+.select-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+.list-items{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color:  #f2f2f2;
+    display: none;
+    font-weight: bold;
+}
+.select-btn.open ~ .list-items{
+    display: block;
+}
+.list-items .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.list-items .item:hover{
+    background-color: #e6e6e6;
+}
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+}
+.item.checked .checkbox{
+    background-color: #404040;
+    border-color: #4070f4;
+}
+.checkbox .check-icon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+}
+.item.checked .check-icon{
+    transform: scale(1);
+}

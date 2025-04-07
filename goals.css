@@ -1,0 +1,80 @@
+#goals-dropdown-container{
+    display: none;
+}
+#goal_select_dropdown {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Adjust the following properties for better button appearance */
+    width: 100%; /* Adjust width as needed */
+    padding: 2rem; /* Adjust padding for better spacing */
+    font-size: 1.25rem; /* Smaller font size */
+    color: #000; /* Text color matches the background */
+    text-align: center; /* Center text */
+    background-color: rgb(189, 225, 228); /* Uniform background color */
+    border: none; /* No border */
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+#goal_select_dropdown:hover {
+    background-color: #9EE0FF; /* Uniform hover background color */
+}
+
+#goal_select_dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#goal_select_dropdown ul li {
+    text-align: center; /* Center list items */
+}
+
+#goal_select_dropdown ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #000; /* Black color for options */
+    text-decoration: none;
+}
+
+#goal_select_dropdown ul li a:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light transparent blue on hover */
+}
+
+.milestone-item {
+    width: calc(100% - 4em);
+    border-radius: 15px;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 1.5em; /* Reduced padding */
+}
+
+.ms_checkbox{
+        display:none;
+}
+
+.goal_top_table_container {
+    width: 100%;
+    margin-bottom: 1.5em;
+    background-color: rgb(230, 244, 245);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgb(221, 223, 226);
+}
+
+.goal_top_table_container table tr td {
+    width: 33%;
+}
+
+.goal_main_container {
+    width: 100%;
+    padding-left: 0.5em; /* Reduced left padding */
+    padding-right: 0.5em; /* Reduced right padding */
+}

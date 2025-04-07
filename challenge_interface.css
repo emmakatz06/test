@@ -1,0 +1,444 @@
+.challenges__share-wrapper{
+    background-color: whitesmoke;
+}
+
+#buttons
+    {
+    width:100%;
+    text-align: center;
+    padding: 10px;
+    }
+
+#button_desc
+    {
+    text-align: center;
+    font-size: 10pt;
+    color: gray;
+    }
+
+.button_inner:hover 
+    {
+    background-color: lightgray !important;
+    }
+
+.button_inner
+    {
+    display: inline-block;
+    min-height: 0em;
+    font-size: 14pt;
+    padding: 15px;
+    cursor: pointer;
+    background-color:white;
+    color:rgb(38,118,217) !important;
+    font-weight:600;
+    width:26%;
+    border-radius:10px;
+    box-shadow: 0.5px 0.5px 4px 0.5px gray;
+    position:relative;
+    margin: 0 1%;
+    height: 185;
+    overflow: hidden;
+    }
+
+#challenge_container
+    {
+    background-color: white;
+    width:50%;
+    margin-left:25%;
+    }
+
+#challenge_container_top
+    {
+    text-align:center;
+    position:relative;
+    margin-top:10%;
+    width:50%;
+    margin-left:25%;
+    color: black;
+    background-color: #DCF0FA;
+    border: 1px solid black;
+    border-bottom: none; 
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(221, 223, 226);
+    }
+
+#challenge_container_top #challenge_name
+    {
+    font-size: 150%;
+    }
+
+#challenge_container_top #challenge_creator
+    {
+    font-weight: 100;
+    font-style: italic;
+    }
+
+#challenge_top_table_container table td
+    {
+    text-align: center;
+    border-right: 1px solid rgb(221, 223, 226);
+    border-bottom: 1px solid rgb(221, 223, 226);
+    }
+
+#challenge_top_table_container table #amount
+    {
+    border-right: none;
+    }
+
+.challenge_description{
+    padding: 1rem;
+    font-weight: 100;
+}
+
+#participants_dropdown_button {
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: light;
+    background-color: rgb(216, 244, 222);
+    color: rgb(5, 94, 22);
+    }
+    
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, #participants_dropdown_button:hover {
+    background-color: rgb(216, 244, 212);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+#participants_dropdown {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+#participants {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+#comp_container
+    {
+    display:flex;
+    align-items: center;
+    }
+
+#joinButton, more__details-link {
+    display: inline-block;
+    background-color: rgb(0,160,242);
+    text-align:center;
+}
+
+.individual-challenge-container {
+    position:relative;
+    width:90%;
+    border:1px solid rgb(221,223,226);
+    background-color:rgb(255,255,255);
+    margin: auto;
+    margin-top: 20px;
+    border-radius:10px;
+    padding-bottom:3em;
+    
+}
+
+
+.challenge-header-container {
+    width:100%;
+    /*height:4em;*/
+    margin-bottom:1.5em;
+    background-color: #D5EEFD;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom:1px solid rgb(221,223,226);
+}
+
+.challenge-main-container {
+    width:100%;
+    padding-left:1.5em;
+    padding-right:1.5em;
+}
+
+.challenge-main-button{
+    background: linear-gradient(to bottom, rgb(228,230,235) 50%,rgba(255,255,255) 50%);
+    background-size: 100% 200%;
+    background-position:top left;
+    border-radius: 12px;
+    border-color:rgb(228,230,235);
+    font-weight:400;
+}
+
+.challenge-main-button:hover{
+    color:rgb(205, 29, 29);
+    border-color: rgb(39, 187, 98);
+}
+.challenge-progress-section {
+    width:100% !important;
+    height: 30px;
+    margin-bottom:-0.65em;
+}
+
+.challenge-progress-bar {
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #E4E6EB;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+.challenge-progress-fill {
+    height: 100%;
+    width: 0%;
+    min-width: 0%;
+    max-width: 100%;
+    margin-left: 0px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(24,118,242);
+}
+
+.challenge-progress-amount {
+    width:30%;
+    margin: auto;
+    text-align: center;
+    padding:0.5em;
+}
+
+.challenge-info-table {
+    width: 80%;
+    margin: auto;
+}
+
+.challenge-info-cell {
+    width: 25%
+}
+
+.challenge-info-heading {
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #3E3E3E;
+}
+
+.challenge-info {
+    display: block;
+    margin-bottom: 35px;
+    text-align: left;
+    color: #222;
+}
+
+#status {
+    display: flex;
+}
+
+
+.challenge-title {
+    font-weight: bold;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.challenge-icon {
+    width:100%;
+    height:100%;
+    padding: .5em .5em .5em .5em;
+    max-width:5em;
+    max-height:5em;
+    text-align:center;
+}
+
+.challenge-status-circle {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #222;
+}
+
+#display-challenge-navbar 
+    {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(200,200,200);
+    align-items: center;
+    }
+
+#display-challenge-navbar-buttons 
+    {
+    width: 100%;
+    }
+
+#display-challenge-navbar-buttons td 
+    {
+    width:25%;
+    padding:10px;
+    }
+
+#display-challenge-navbar-buttons .toggle-button 
+    {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    padding: 5px 20px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    width: 150px;
+    }
+
+#display-challenge-navbar-buttons .toggle-button:hover 
+    {
+    background-color: lightgray;
+    }
+
+#display-challenge-navbar-buttons .toggle-button.active 
+    {
+    color: rgb(38,118,217);
+    border-bottom: 5px solid rgb(38,118,217) !important;
+    }
+
+#display-challenge-navbar-buttons #all.filter-btn
+    {
+    font-size: medium !important;
+    border: 2px solid lightgray !important;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: gray;
+    padding: 5px 30px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+#display-challenge-navbar-buttons #all.filter-btn:hover
+    {
+    background-color: lightgray;
+    }
+
+#challenge-type-filter {
+    width: 100%;
+    border: 1px solid #B4B4B4;
+    background: #F3F3F3;
+}
+
+#challenge-type-filter td {
+    width: 10%;
+}
+
+#challenge-type-filter .filter-toggle-button {
+    border-radius: 50px;
+    border: 1px solid #828282;
+    background: #FFF;
+}
+
+#challenge-type-filter .filter-toggle-button:hover {
+    background-color: lightgray;
+}
+
+#challenge-type-filter .filter-toggle-button.active {
+    color: rgb(38,118,217);
+}
+
+#save {
+    margin-left: 20px;
+}
+#joinContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(0, 160, 242);
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: auto;
+    margin-left:auto;
+    border: 1px solid rgb(221, 223, 226);
+    margin-top: 0;
+    width: 50%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: center;
+}
+
+#privateContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(0, 160, 242);
+    font-size: 2rem;
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: auto;
+    margin-left:auto;
+    border: 1px solid rgb(221, 223, 226);
+    margin-top: 0;
+    width: 50%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: center;
+}
+
+#joinButton 
+    {
+    display: block;
+    background-color: #138484;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: 1px solid gray !important; 
+    
+}
+
+#joinButton:hover, more__details-link:hover
+    {
+    background-color: white;
+    color: rgb(0,160,242);
+    }
+
+#joinContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(0, 160, 242);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#more__details-link{
+    display: block;
+    background-color: white;
+    color: rgb(0, 160, 242);
+    width: 20%;
+    
+}
+
+#more__details-link:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 777px) {
+    tr { font-size: 10px; }
+    .challenge_description {font-size: 12px}
+    #challenge_container_top {font-size: 1rem}
+}
+
+@media screen and (max-width: 420px) {
+    tr { font-size: 8px; }
+    .challenge_description {font-size: 12px}
+    #challenge_container_top {font-size: 0.5rem}
+    #more__details-link {font-size: 0.5rem}
+}

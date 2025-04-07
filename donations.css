@@ -1,0 +1,380 @@
+body {
+    background-color: #f6f6f6;
+}
+
+#mainNav {
+    background-color: white;
+}
+
+hr.donation-line {
+    max-width: 100%;
+    border-color: lightgray;
+    border-width: 2px;
+}
+
+.main-content-section {
+    display: flex;
+    font-size: 0.875em;
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.title-donation-container {
+    width: 75vh;
+    /* text-align: center; */
+}
+
+.donation-amount-section {
+    width: 380px;
+    background-color: #fff;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    padding: 24px;
+    color: #222;
+}
+
+.title-donation-amount {
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.frequency-options input[type="radio"], .amount-options input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+input[type="radio"]:checked + .frb-btn {
+    background-color: rgb(0,162,232);
+    color: #fff;
+    border-color: rgb(0,162,232);
+}
+
+.frb-btn:hover {
+    background-color: #fff;
+    color: #444;
+    border-color: #a2a9b1;
+}
+
+.frb-btn, .payment-method-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+    background-color: #f8f9fa;
+    color: #222;
+    border: 1px solid #a2a9b1;
+}
+
+.frequency-options ul, .amount-options ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.frb-btn:focus, .payment-method-button:focus {
+    outline: 0;
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+}
+
+.frb-btn:hover {
+    background-color: #fff;
+    color: #444;
+    border-color: #a2a9b1;
+}
+
+.frequency-options ul li, .amount-options ul li {
+    flex: 1 0 0;
+    padding: 4px;
+}
+
+li {
+    margin-bottom: 0.1em;
+}
+
+.amount-options .frb-btn {
+    height: 60px;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.input_amount_other input {
+    display: block;
+    width: 100%;
+    border: 1px solid #a2a9b1;
+    color: #222;
+    padding: 2px;
+    border-radius: 2px;
+    direction: ltr;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 4px;
+}
+
+.payment-method-button {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+.payment-method-button {
+    color: #36c;
+}
+
+.payment-method-div {
+    padding: 4px 4px;
+    padding-bottom: 12px!important;
+}
+
+.paymentmethod-cc svg {
+    height: 26px;
+    border: 1px solid #c8ccd1;
+    border-radius: 4px;
+}
+
+.payment-method-button svg {
+    margin: 0 4px;
+}
+
+#infobox-wrapper h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: inherit;
+    border: 0;
+}
+
+.vector-body .mw-heading2, .vector-body h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+#infobox-wrapper {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #54595d;
+    font-weight: normal;
+    padding: 8px 4px 0 4px;
+}
+
+.lp-radio-label, .lp-checkbox-label {
+    display: table-cell;
+    vertical-align: top;
+    padding: 4px 0;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.lp-radio-wrapper, .lp-checkbox-wrapper {
+    display: table;
+}
+
+.lp-radio, .lp-checkbox {
+    display: table-cell;
+    vertical-align: top;
+    margin: 7px 8px 8px 2px;
+    cursor: pointer;
+}
+
+body {
+    padding: 25px;
+}
+
+.amount-options .lp-error {
+    margin: 0 4px;
+}
+
+.lp-error {
+    color: #d73333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.transaction-fee {
+    transition: max-height 0.35s ease-in-out;
+    overflow: hidden;
+}
+
+.input-focused {
+    border-color: #2a4b8d;
+    box-shadow: inset 0 0 0 1px #2a4b8d;
+}
+
+/* Mobile view styles */
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Show inline with the title */
+    margin-left: 5px;
+}
+
+.title-donation-main {
+    /* cursor: pointer; */
+    display: inline;
+}
+
+/* Always show the donation-sub-section in desktop view */
+@media (min-width: 501px) {
+    .toggle-button {
+        display: none; /* Hide the toggle button on desktop */
+    }
+
+    .donation-sub-section {
+        display: block; /* Always show the content on desktop */
+    }
+}
+
+/* Mobile view styles */
+@media (max-width: 500px) {
+    .donation-title-section h5 {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        align-items: center;
+    }
+
+    .toggle-button {
+        margin-left: 5%;
+        display: inline-block;
+    }
+
+    body {
+        padding-right: 3px!important;
+        padding-left: 3px!important;
+        margin: 0!important;
+    }
+
+    .main-content-section {
+        padding-bottom: 5px!important;
+        margin-bottom: 5px!important;
+    }
+
+    .donation-sub-section {
+        display: none; /* Hide by default on mobile */
+    }
+
+    .title-donation-main {
+        margin-left: 10px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .donation-line {
+        display: none;
+    }
+
+    .donation_faq_title {
+        font-size: 9px!important;
+        margin-top: 5px!important;
+        margin-bottom: 5px!important;
+    }
+
+    .donation_faq_content_first {
+        font-size: 8px!important;
+        margin-bottom: 4px!important;
+    }
+
+    .donation_faq_content {
+        font-size: 8px!important;
+        margin-bottom: 0px!important;
+    }
+
+    .donation_faq_sub_links {
+        font-size: 8px!important;
+    }
+
+    .donation_faq_wrapper {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .donation-sub-section {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .navbar-header {
+        margin: auto!important;
+    }
+
+    #mainNav {
+        background-color: #f6f6f6;
+    }
+}
+
+.donation_faq_wrapper {
+    width: 100vh;
+}
+
+
+button.navbar-toggler {
+    display: none;
+}
+
+
+
+.input-error {
+    border-color: #d73333; /* Red border for error */
+    box-shadow: 0 0 5px rgba(215, 51, 51, 0.5); /* Optional: Adds a slight glow */
+}
+
+.lp-error {
+    color: #d73333; /* Red text for error messages */
+    margin-top: 4px; /* Spacing above the error message */
+    display: none; /* Hidden by default, shown when there's an error */
+    font-size: 14px; /* Ensures visibility */
+}
+
+
+.store_donation_link:hover { 
+    text-decoration: none; 
+  }
+/* .sub-info-box-conetent {
+    margin-top: 2px;
+} */

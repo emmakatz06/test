@@ -1,0 +1,509 @@
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.gs_prl_block_container{
+    position:relative;
+    text-align:center;
+    margin:0 auto;
+    max-width:1200px;
+}
+.general_occluder{
+    width:100%;
+    height:2em;
+    margin-top:-2em;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    margin:0 auto;
+    height:2em;
+    position:relative;
+    z-index:5;
+}
+.general_occluder_inv{
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    margin-top:0em;
+    margin-bottom:-2em;
+}
+.gs_margin_block{
+    margin-bottom:120px !important;
+}
+.gs_prl_header_main{
+    font-size:40px;
+    font-weight:600;
+    text-align:center;
+}
+.gs_prl_header_sub{
+    font-size:20px;
+    text-align:center;
+}
+.gradient_border_wrapper{
+    border-image: linear-gradient(to right, rgb(248,110,172), rgb(165,146,238)) 100;
+    border-top-width: 4px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    text-align:left;
+    width:100%;
+    padding-top:1em;
+    padding-left:3px;
+    padding-right:3px;
+}
+.gs_prl_header_gradient{
+    font-size:17px;
+    min-height:2.5em;
+    font-weight:bolder;
+    text-align:left;
+}
+.gs_header_margin_small{
+    margin-bottom:20px;
+}
+.gs_header_margin_large{
+    margin-bottom:40px;
+}
+.gs_header_land{
+    width:75%;
+    margin:0 auto;
+    text-align:left;
+    min-width:10em;
+    border-top: 1px solid rgb(234,234,234);
+    border-bottom: 1px solid rgb(234,234,234);
+}
+.gs_header_land .section_land{
+    background-color:rgba(255,255,255,0);
+}
+.gs_img_decorated{
+    border:1px solid rgb(181,180,183);
+    border-radius:6px;
+}
+.gs_img_invest_header{
+    display:block;
+    margin:0 auto;
+    margin-bottom:5px;
+    height:75px;
+}
+.gs_invest_header{
+    text-align:center;
+}
+.gs_rounded_std{
+    border-radius: 8px !important;
+}
+
+.card-body {
+    flex: auto;
+    margin: auto;
+    margin-top: 0;
+}
+
+.card-img-top {
+    align-items: center;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: .5em;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    left: 20rem;
+    bottom: 2rem;
+}
+.container{
+    width: 100%;
+    line-height: 1.35 !important;
+    margin: 0 auto;
+}
+.card {
+    border-radius: 0;
+}
+.card-img{
+    position: relative;
+}
+.text {
+    border: 0px solid rgba(255,255,255,0);
+    height: 10rem;
+    border-radius: 0;
+}
+.card-user,.card-text {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1rem;
+}
+.active, .collapsible:hover {
+    background-color: white;
+}
+.store_master_container{
+    width:80%; margin:0 auto;max-width:1920px;
+}
+.goal_store_header_container{
+    text-align:center;
+    margin-bottom:4.5em;
+    max-width:1920px;
+}
+.goal_store_main_header_text{
+    display: inline-block;
+    margin-right: 2em;
+}
+.goal_store_searchbar_container{
+    display:inline-block;
+    margin-left:35%;
+    margin-top:4em;
+    margin-bottom:4em;
+    width:calc(30%);
+    min-width:10em;
+    position:relative;
+}
+.goal_store_searchbar_container_igs{
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.nav_big_cell_link_filtering{
+    width:14.3%;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.nav_big_cell_link_filtering:hover{
+    background-color:rgb(240,242,245);
+}
+.link_filtering_table_active{
+    border-bottom: 4px solid rgb(0,162,232);
+    font-weight:700;
+    color:rgb(0,162,232);
+}
+.icon_filtering_table{
+    width:20%;
+    margin-left:auto;
+    min-width:25em;
+    max-width:1440px;
+}
+.icon_filtering_cell{
+    text-align:center;
+    font-size:110%;
+    padding: 5px 10px 5px 10px;
+    cursor:pointer;
+    min-width:5em;
+    color:rgb(101,103,107);
+    position:relative;
+}
+.icon_filtering_cell:hover{
+    background-color:rgb(240,242,245);
+}
+.carousel_container_resp{
+    width:10em;
+    height:9em;
+    margin: 0 auto;
+    border:none;
+}
+.filter_carousel_label{
+    padding-bottom:0px;
+    padding-top:0.5rem;
+}
+.carousel_img_container{
+    border:none;
+}
+.filtering_carousel_nav_custom{
+    margin-top:-1em;
+}
+.filtering_carousel_nav_custom:hover{
+    background-color:#869791 !important;
+}
+.goal_store_big_row{
+    border-bottom:3em solid rgba(255,255,255,0); 
+}
+.goal_store_cat_header_cell{
+    width:10%;
+    min-width:15rem;
+    vertical-align:top;
+    /*padding-top:20px;*/
+    padding-right:1.5em;
+    position:relative;
+}
+.goal_store_list_cell{
+    width:90%;
+}
+.goal_store_list{
+    flex-wrap:wrap !important;
+    margin-top:0.5em;
+}
+.goal_store_item_col{
+    margin-bottom:2em;
+    min-width:15rem;
+    max-width:20rem;
+    padding-left:1em;
+    padding-right:1em;
+}
+.gs_border_container{
+    border:1px solid rgb(235,236,237);
+    border-radius:11px;
+}
+.gs_header{
+    margin-bottom:0px;
+    width:100%;
+    border: 0px solid rgba(255,255,255,0);
+    background-color:rgb(241, 248, 252);
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.gs_midsection_container{
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.gs_midsection{
+    border: 0px solid rgba(255,255,255,0);
+    background-color:rgba(255,255,255,0);
+}
+.gs_footer{
+    border: 0px solid rgba(255,255,255,0);
+    background-color:rgba(255,255,255,0);
+    border-bottom-right-radius:10px !important;
+    border-bottom-left-radius:10px !important;
+}
+.goal_card_img{
+    border-radius:0px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.gs_title{
+    font-size:1.5rem !important;
+}
+.gs_choice_container{
+    line-height:1;
+    background-color:black;
+    padding:2px;
+    height:1.4rem;
+    margin-top:0.6rem;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+}
+.gs_choice_container_inline{
+    margin-top:0rem;
+    margin-right:0.5em;
+}
+.gs_choice_span1{
+    font-size:0.75rem;
+    font-weight:700;
+    color:white;
+}
+.gs_choice_span2{
+    font-size:0.7rem;
+    font-weight:600;
+    color:rgb(86,147,242);
+}
+.goal_store_mob_cat_header{
+    margin-bottom:0.75em;
+}
+.prl_img_header{
+    background-image: url('../img/goal_store/gs_header_bg.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.prl_main_title{
+    font-size: 50px;
+    font-weight:600;
+    display:inline-block;
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:1rem;
+    color: #212529 !important;
+}
+
+.prl_top_link_container{
+    margin:0 auto;
+    margin-top:75px;
+    margin-bottom:10px;
+    width:100%; 
+    max-width:1200px;
+    height:auto;
+}
+.prl_link_quad_wrapper{
+    min-width:300px;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.prl_link_pair_wrapper{
+    min-width:300px;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-wrap:nowrap;
+}
+.goal_store_prl_link_container{
+    max-width:150px;
+    max-height:150px;
+    padding-left:7px;
+    padding-right:7px;
+    display:inline-block;
+}
+.goal_store_prl_link{
+    text-decoration:none !important;
+    border:1px solid lightgray;
+    border-radius:10px;
+    padding:10px 10px 10px 5px;
+    display:inline-block;
+    background-color:rgba(255,255,255,0.66);
+    margin-bottom:10px;
+    transition: .3s ease;
+}
+.goal_store_prl_link:hover{
+    background: radial-gradient(circle, rgba(146,228,244,0.7357143541010154) 0%, rgba(175,240,251,0.8239496482186625) 38%, rgba(190,235,243,0.35476197314863445) 65%, rgba(228,243,244,0.86) 82%, rgba(232,244,244,1) 100%);
+    transition: .3s ease;
+}
+.goal_store_prl_link_img{
+    width:40%;
+    margin:0px 0px 23px 0px;
+}
+.goal_store_prl_link_text{
+    margin:0 0 0 10px;
+    color:black;
+    min-width:100px;
+    font-weight:400;
+    font-size:1.15rem;
+}
+.goal_store_prl_link_target{
+    position:absolute;
+    top:-40px;
+}
+.goal_store_prl_link_target_long{
+    top:calc(-40px - 5em);
+}
+.prl_main_button{
+    text-decoration:none;
+    border-radius:30px;
+    width:215px;
+    height:70px;
+    color:white;
+    margin:2rem 0 16px;
+    border:1px lightgray solid;
+    font-size:150%;
+    display:inline-block;
+    transition: .1s ease;
+    background-color:#28B6FF;
+    padding-top:17px;
+}
+.prl_main_button:hover {
+    background-color:#00A0F2;
+    transition: .1s ease;
+}
+
+@media (max-width:768px) {
+    .store_master_container{
+        width:98%;
+    }
+    .goal_store_header_container{
+        width:98%;
+        margin:0 auto;
+        margin-bottom:2.5em;
+        text-align:left;
+    }
+    .goal_store_searchbar_container{
+        width:90%;
+        min-width:15em;
+        margin-left:5%;
+    }
+    .nav_big_cell_link_filtering{
+        padding-left:1em;
+        padding-right:1em;
+        overflow-wrap: break-word;
+    }
+    .icon_filtering_table{
+        width:100%;
+        margin-left:0px;
+        min-width:0em;
+    }
+    .icon_filtering_cell{
+        min-width:2em;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .nav_big_cell_link_filtering{
+        overflow-wrap: break-word;
+    }
+    .carousel_container_resp{
+        width:5em;
+        height:4.5em;
+    }
+    .filtering_carousel_nav_custom{
+        display:none;
+    }
+    .goal_store_list_cell{
+        width:100%;
+    }
+    .prl_img_header{
+        background-image: url('../img/goal_store/gs_header_bg_mob.png');
+    }
+    .prl_main_title{
+        width:90%;
+    }
+    .gs_prl_header_main,.gs_prl_header_sub,.gs_block_img{
+        width:90%;
+    }
+    .gs_prl_header_main,.gs_prl_header_sub{
+        margin-left:5%;
+    }
+    .gs_prl_header_gradient{
+        min-height:0em;
+        padding-top:1.2em;
+    }
+    .goal_store_list{
+        justify-content:center;
+    }
+    .gradient_header_container{
+        margin-bottom:2rem;
+    }
+}
+/* Styling for the date input */
+    .gs_main_date{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    width: calc(100% - 20px); /* Adjust the width here */
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    max-width:26.125rem;
+}
+
+/* Hover effect for the date input */
+input[type="date"]:hover {
+    background-color: #eaeaea;
+}
+
+/* Focus effect for the date input */
+input[type="date"]:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*function to attempt removing the x-button on the search*/
+/* https://stackoverflow.com/questions/57011736/how-to-get-rid-of-the-x-on-the-search-bar */
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  
+display: none; 
+width : 0; 
+height: 0; 
+}
+input[type=search]::-ms-reveal { 
+display: none; 
+width : 0; 
+height: 0; 
+}
+
+/* clears the 'X' from Chrome */ 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+display: none; 
+}

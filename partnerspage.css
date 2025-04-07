@@ -1,0 +1,150 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+hr{
+    max-width: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+h2{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+h3{
+    font-size: 14pt;
+    color: rgb(100, 100, 100);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* input[type="text"], select, input[type="submit"] {
+    margin: 0;
+    padding: 15px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    width: 700px;
+    height: 60px;
+    margin-bottom: 1rem;
+    position: relative; 
+}
+
+input[type="text"]::placeholder, select::placeholder, input[type="submit"]::placeholder {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 15px; 
+    padding: 0; 
+    pointer-events: none; 
+    color: #aaa; 
+} */
+
+input[type="text"], select, input[type="submit"] {
+    margin: 0;
+    padding: 15px; /* Increased padding for better spacing */
+    border: 2px solid #ccc; /* Slightly thicker border */
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 700px;
+    height: 60px;
+    margin-bottom: 1rem;
+    position: relative; /* Added position relative */
+}
+
+input[type="text"]::placeholder, select::placeholder, input[type="submit"]::placeholder {
+    position: absolute; /* Set placeholder position to absolute */
+    top: 0; /* Align placeholder text to the top */
+    left: 0; /* Align placeholder text to the left */
+    padding: 15px; /* Match the padding of the input field */
+    pointer-events: none; /* Ensure placeholder text doesn't interfere with events */
+    color: #aaa; /* Placeholder text color */
+}
+
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+ 
+
+#myDIV{ display: none; } 
+
+.hidden {
+    display: none;
+}
+
+#sellerInfoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.goal_container_step2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup_container_step2 {
+    
+    margin-top: 20px; 
+}
+
+
+.login_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sellerInfoForm1 {
+    width: 100%; 
+    max-width: 700px; 
+    margin-top: 20px; 
+}
+
+.example {
+    background-color: rgb(158, 224, 255) ;
+}
+.toggleButton,.toggleButton0, .toggleButton1, .toggleButton2, .toggleButton3, .toggleButton4{
+    background-color: white;
+    border: none;
+    border-color: white;
+}
+
+.SectionName, .SectionName0, .SectionName1, .SectionName2, .SectionName3, .SectionName4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: rgb(158, 224, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.error {
+    color: red;
+}

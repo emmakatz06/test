@@ -1,0 +1,240 @@
+/* POPUP GOAL ADDED */
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body p {
+    margin: 0;
+}
+.modal-body h4 {
+    line-height: 
+    .2;
+    margin-bottom: 15px;
+}
+
+.modal-content {
+    padding: 60px;
+    border-radius: 20px;
+}
+.modal-content-cust{
+    padding: 0px;
+    
+}
+
+#p-donate {
+    margin-bottom: 10%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modal-footer button {
+    width: 200px;
+    height: 50px;
+    border-radius: 0;
+    margin: 20px 0;
+    background-color: #5693F2;
+    color: white;
+}
+.fa-check-circle {
+    color: #497C63;
+}
+
+.popup-content button {
+    margin-top: 30px;
+
+}
+
+.modal-footer button:hover {
+    background-color: #087cfc;
+    color: white;
+}
+
+.modal-dialog {
+    overflow: hidden;
+}
+.modal-header .close-goal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem 1rem;
+    margin: auto;
+}
+.close-goal:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* CUSTOMIZE POPUP */
+#customizeModal{
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+.progress_active {
+    background-color: rgb(158, 224, 255);
+    border: 1px solid rgb(158, 224, 255);
+    font-weight: 700;
+}
+
+.progress_inactive {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(158, 224, 255);
+}
+
+.sec_title_right {
+    font-size: 135%;
+    color: rgb(29, 33, 41);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.tailor_exp {
+    min-height: 4em;
+    padding: 1.75%;
+}
+.acct_block_r {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    padding: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 1.2em;
+    border-radius: 10px;
+}
+
+.wizard_subheader {
+    color: rgb(101, 103, 107);
+    font-size: 100%;
+}
+/* #chore_payment_log_table td, tr {
+    text-align: left;
+    padding: 0.5em;
+} */
+
+.wizard_tab {
+    width: calc(103.5% - 2em);
+    background-color: rgb(247, 246, 245);
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1.5%;
+    border-radius: 3px;
+}
+.wizard_cond {
+    height: calc(1em + 22px);
+    font-size: 1.1rem;
+}
+.default_span{
+    color:rgb(6,125,98);
+    font-weight: 700;
+}
+.wizard_cond a{
+    margin-left:1.5em;
+    font-size:85%;
+}
+.wizard_cond .btn-default{
+    margin-left:0em;
+}
+.wizard_checkmark{
+    height:1rem;
+    width:auto;
+    margin-right:0.5em;
+}
+.simp_button {
+    color: #4087f6;
+    font-size: 13pt;
+    cursor: pointer;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#tab2{
+    display:none;
+}
+.acct_block_num_span {
+    float: right;
+    text-align: right;
+}
+.dropdown_replace {
+    border: 0px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+}
+ 
+.short-input {
+    width: 150px;
+    border-radius: 25px; 
+    text-align: center; 
+    border: 3px solid rgb(158,224,255);
+}
+.short-date-input {
+    width: 11em;
+}
+.p-secured {
+    text-align: center;
+}
+
+.rate_tooltip{
+    min-height: 1em;
+    width: 10em;
+    top: 2em;
+    right:25%;
+}
+
+.blue_tooltip {
+    font-size: 8px !important;
+    border: 1px solid rgb(25,116,109) !important;
+}
+
+.hidden {
+    display: none;
+}
+#defaultUsed {
+    margin-right: 10px;
+}
+
+.radio-income label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-income input[type="radio"] {
+    margin-right: 5px;
+    border: 2px solid rgb(158,224,255);
+}
+
+.short-input::placeholder {
+    text-align: left;
+    padding-left: 5px; 
+}
+#scoreButton, #startButton, #endButton {
+    padding-left: 10px;
+}
+.income::placeholder {
+    font-weight: bold;
+}
+
+.custom-modal-dialog {
+    max-width: 70%;
+    border-radius: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .custom-modal-dialog {
+        max-width: 100%
+    }
+    .short-input {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+    
+    .wizard_tab {
+        width: calc(100% - 2em); 
+        padding: 10px; 
+    }
+    
+    .acct_block_r {
+        padding: 15px; 
+    }
+}

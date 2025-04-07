@@ -1,0 +1,228 @@
+/*Lifeline Elements CSS*/
+#lifeline_body {
+  padding-top: 55px;
+  background-color: rgb(250, 250, 250);
+  min-height: 100vh;
+  min-width: 100%;
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+}
+.lifeline_title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.lifeline_title .title_heading {
+  font-size: 250%;
+}
+.lifeline_page_container {
+  width: 70%;
+  background-color: rgb(250, 250, 250);
+  padding: 15px 50px 15px 50px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.lifeline_post{
+  width: 100%;
+  background-color: white;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius:10px;
+  padding: 15px 15px 10px 15px;
+  font-size: 12pt;
+  line-height: 1.5;
+}
+.lifeline_page_buttons_container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.lifeline_page_buttons_container .grad_button {
+  min-width: 10em;
+}
+.lifeline_post_title {
+  font-size: 15pt;
+}
+.lifeline_page_button {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 16pt;
+  color: black;
+}
+.lifeline_button_spacer {
+  color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  display: hidden;
+  padding: 15px 30px;
+}
+.lifeline_between_buttons {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+/* Post Content Styling - Jon */
+#expand,
+#expand-tags {
+  color: #0080df;
+}
+
+#expand:hover,
+#expand-tags:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.edit_block {
+  border: 1px solid rgb(221, 223, 226);
+  border-radius: 10px;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid rgb(158, 224, 255);
+  border-radius: 0.25rem;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid rgb(158, 224, 255);
+  border-radius: 0.25rem;
+}
+
+.post-content {
+  display: block;
+}
+
+.post-title {
+  font-weight: bold;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-btn {
+  font-size: 1rem;
+}
+
+.pop {
+  border: 15px lightgrey;
+  border-style: solid;
+  background-color: cyan;
+  width: 200px;
+}
+
+.toPop {
+  width: 300px;
+  height: 300px;
+  background: red;
+}
+.lifeline_tag_container{
+    margin-left:-0.5em;
+}
+.lifeline_tag {
+    border-radius:300px;
+    display:inline-block;
+    font-weight: 700;
+    padding: 0.175rem 0.75rem;
+    margin: 0.5em;
+    background: rgb(228,230,235);
+    cursor:default;
+    text-transform: uppercase;
+}
+.tag-content {
+  display: none;
+}
+.tag_selected{
+    background-color: skyblue !important;
+    font-weight: bold !important;
+}
+
+.post-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#lifeline {
+  margin: auto;
+  max-width: 75%;
+}
+
+.list_container {
+  margin: 1.5em;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.page_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tags {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+#tags button {
+  margin: 0.5rem;
+}
+
+#form_post_text {
+  border: 1px solid rgb(158, 224, 255);
+  width: 100%;
+  height: 4em;
+  padding: 0.4em;
+}
+
+#story_pane1 button {
+  margin: 10px;
+  padding: 3px 15px;
+  font-size: 0.9rem;
+}
+
+#create_post_form {
+  text-align: left;
+  padding: 35px 30px 0px 30px;
+}
+
+#form_title {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#edit_btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  min-width: 50%;
+}
+
+#create_post_form h3 {
+  margin: 1rem 0 1rem 0;
+}
+@media (max-width: 768px) {
+  .lifeline_page_container {
+    width: 100%;
+    padding: 15px 5px 50px 5px;
+  }
+  .lifeline_article {
+    width: 100%;
+  }
+  .lifeline_between_buttons {
+    display: none;
+  }
+}
+
+/*End Lifeline*/

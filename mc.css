@@ -1,0 +1,15 @@
+input,textarea {
+    border: 2px solid !important;
+    border-color: #9fe1ff !important;
+    background-color: #fcfcfc !important;
+}
+input:focus,textarea:focus {
+    border-color: black !important;
+}
+img {
+    min-width: 0 !important;
+}
+.required:after {
+    content: " *";
+    color: red;
+}
